@@ -225,8 +225,8 @@ pre code {
   .bg-image {
     background-image: url('../images/raspap-wifi.png');
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: 575px;
+    background-position: right 0px top 0px;
+    background-size: 775px;
   }
   .promo.container {
     text-align: left!important;
