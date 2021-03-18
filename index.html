@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RaspAP — Simple wireless router setup for Debian-based devices</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-2.css">
+    <!-- GitHub Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script> 
+  </head> 
+
+  <body data-spy="scroll">
+
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+      <div class="container">            
+        <h1 class="logo float-left">
+          <a class="scrollto" href="#promo">
+            <span class="logo-title">RaspAP</span>
+          </a>
+        </h1><!--//logo-->              
+        <nav id="main-nav" class="main-nav navbar-expand-md float-right" role="navigation">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button><!--//nav-toggle-->
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#docs">Docs</a></li>
+              <li class="nav-item"><a class="nav-link scrollto" href="#license">License</a></li>                        
+              <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul><!--//nav-->
+          </div><!--//navabr-collapse-->
+        </nav><!--//main-nav-->
+      </div>
+    </header><!--//header-->
+
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section bg-image">
+      <div class="container">
+        <h2 class="title">Rasp<span class="highlight">AP</span></h2>
+        <p class="intro">The easiest, full-featured wireless router setup for Debian-based devices. Period.</p>
+        <div class="btns">
+          <a class="btn btn-cta-secondary" href="#quick">Quick start</a>
+          <a class="btn btn-cta-primary" href="https://github.com/sponsors/RaspAP" target="_blank">Get Insiders</a>
+        </div>
+        <ul class="meta list-inline">
+          <li class="list-inline-item"><a href="https://github.com/RaspAP/raspap-webgui" target="_blank">View on GitHub</a></li>
+          <li class="list-inline-item"><a href="https://docs.raspap.com/" target="_blank">Full Documentation</a></li>
+          <li class="list-inline-item">Created by: the <a href="https://github.com/RaspAP" target="_blank">RaspAP team</a></li>
+        </ul><!--//meta-->
+      </div><!--//container-->
+      <div class="social-media">
+        <div class="social-media-inner container text-center">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item twitter-follow"><a href="https://twitter.com/rasp_ap" class="twitter-follow-button" data-show-count="false">Follow @RaspAP</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li><!--//twitter-follow-->
+            <li class="list-inline-item twitter-tweet">
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="RaspAP" data-hashtags="RaspAP">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li><!--//twitter-tweet-->
+            <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+            <li class="list-inline-item github-star"><a class="github-button" href="https://github.com/RaspAP/raspap-webgui" data-icon="octicon-star" aria-label="Star RaspAP/raspap-webgui on GitHub">Star</a></li>
+            <li class="list-inline-item github-follow"><a class="github-button" href="https://github.com/sponsors/RaspAP" aria-label="Sponsor RaspAP on GitHub">Join Insiders</a></li>                   
+          </ul>
+        </div>
+      </div>
+    </section><!--//promo-->
+
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="title text-center">More than an access point</h2>
+        <div class="featured-img text-center">
+          <img class="img-fluid mt-2 mb-4" style="max-width:60%;" src="https://i.imgur.com/ikWvsMG.gif" alt="RaspAP Dashboard" />
+        </div><!--//featured-img-->
+        <p class="intro text-center">RaspAP is feature-rich wireless router software that <i>just works</i> on many popular Debian-based devices, including the Raspberry Pi.
+        Customizable, mobile-friendly interface in 20+ languages. Sets up in minutes.</p>
+        <div class="row">
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-key"></i> 
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Multiple VPN options</h3>
+              <p>Both <a href="https://docs.raspap.com/openvpn/">OpenVPN</a> and cutting edge <a href="https://docs.raspap.com/wireguard/">WireGuard</a> encrypted tunnels may be configured to securely connect your client devices.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="far fa-hand-paper"></i> 
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Ad block integration</h3>
+              <p>Streamline AP throughput for your clients by sending requests for ads, trackers and other undesirable hosts to <a href="https://docs.raspap.com/adblock/">DNS blacklist oblivion</a>.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-archway"></i> 
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Bridged mode</h3>
+              <p>Want your upstream router to assign IP addresses? RaspAP lets you change the hotspot configuration to an alternate <a href="https://docs.raspap.com/bridged/">bridged AP</a> mode.</p>
+            </div><!--//content-->
+          </div><!--//item-->           
+          <div class="clearfix visible-md"></div>    
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-code"></i> 
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Easy to customize</h3>
+              <p>Modify RaspAP to suit your needs with a completely exposed <a href="https://docs.raspap.com/defaults/">default configuration<a/>, many <a href="https://docs.raspap.com/quick/">installation options</a>, themes and more.</p>
+            </div><!--//content-->
+          </div><!--//item-->                
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-language"></i> 
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Multilingual</h3>
+              <p>With community-powered support for <a href="https://docs.raspap.com/translations/#supported-languages">20+ translations</a> baked in, RaspAP's interface is ready for use in your preferred language.</p>
+            </div><!--//content-->
+          </div><!--//item-->
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Ready for IoT</h3>
+              <p>Small on memory utilization yet big on features, RaspAP is ideal for IoT applications where wireless connectivity and data sharing are a must.</p>
+            </div><!--//content-->
+          </div><!--//item-->               
+        </div><!--//row-->            
+      </div><!--//container-->
+    </section><!--//about-->
+
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+      <div class="container text-center">
+        <h2 class="title">Additional Features</h2>
+        <ul class="feature-list list-unstyled">
+          <li><i class="fas fa-check"></i> Data usage statistics for all interfaces</li>
+          <li><i class="fas fa-check"></i> <a href="https://docs.raspap.com/ssl-quick/">SSL certificate</a> support</li>
+          <li><i class="fas fa-check"></i> <a href="https://docs.raspap.com/captive/">Captive portal</a> integration</li>
+          <li><i class="fas fa-check"></i> Up-to-date security audits</li>
+          <li><i class="fas fa-check"></i> Advanced DHCP server control</li>
+          <li><i class="fas fa-check"></i> 802.11ac 5GHz wireless</li>
+          <li><i class="fas fa-check"></i> Auto-detect external wireless adapters</li>
+          <li><i class="fas fa-check"></i> Fully responsive + mobile-ready</li>
+        </ul>
+      </div><!--//container-->
+    </section><!--//features-->
+
+    <!-- ******DOCS****** --> 
+    <section id="docs" class="docs section">
+      <div class="container">
+        <div class="docs-inner">
+          <a id="quick"></a><h2 class="title text-center">Quick Start</h2>
+          <div class="block">
+            <p>Begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit">Raspberry Pi OS (32-bit) Lite</a> is used.
+            Update your OS to its latest version, including the kernel and firmware, followed by a reboot:.</p>
+            <div class="code-block">
+              <pre><code class="language-markup">
+ sudo apt-get update
+ sudo apt-get full-upgrade
+ sudo reboot
+              </code></pre>
+            </div><!--//code-block-->
+              <div class="mt-4">
+              <p>Set the WiFi country in <code>raspi-config</code>'s <strong>Localisation Options</strong>:</p>
+              <div class="code-block">
+                <pre><code class="language-markup">
+   sudo raspi-config
+                </code></pre>
+              </div><!--//code-block-->
+            </div>
+            <div class="mt-4">
+              <p>Invoke RaspAP's Quick Installer:
+              <div class="code-block">
+                <pre><code class="language-markup">
+   curl -sL https://install.raspap.com | bash
+                </code></pre>
+              </div><!--//code-block-->
+            </div>
+            <div class="mt-4">
+              <p>The <a href="https://docs.raspap.com/quick/">Quick Installer</a> will complete the steps in the <a href="https://docs.raspap.com/manual/">manual installation</a> for you.</p>
+              <p>Following a reboot, the wireless AP network will be configured as follows:</p>
+              <ul class="list-unstyled">
+                <li><strong>IP address:</strong> 10.3.141.1</li>
+                <li><strong>Username:</strong> admin</li>
+                <li><strong>Password:</strong> secret</li>
+                <li><strong>DHCP range:</strong> 10.3.141.50 to 10.3.141.255</li>
+                <li><strong>SSID:</strong> raspi-webgui</li>
+                <li><strong>Password:</strong> ChangeMe</li>
+              </ul>
+            </div>
+            <p>It is strongly recommended that you change these default credentials in RaspAP's <strong>Authentication</strong> and <strong>Hotspot > Security</strong> panels.</p>
+          </div><!--//block-->
+
+          <div class="block">
+            <a id="distros"><h3 class="sub-title text-center">Supported Distributions</h3></a>
+            <p>RaspAP was originally made for Raspberry Pi OS, but now also installs on the following Debian-based distros.</p>
+            <div class="table-responsive-sm">
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th scope="col">Distribution</th>
+                  <th scope="col">Release</th>
+                  <th scope="col">Architecture</th>
+                  <th scope="col">Support</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Raspberry Pi OS</th>
+                  <td>(32-bit) Lite Buster</td>
+                  <td>ARM</td>
+                  <td>Official</td>
+                </tr>
+                <tr>
+                  <th scope="row">Armbian</th>
+                  <td>Buster</td>
+                  <td><a href="https://docs.armbian.com/#supported-chips">ARM</a></td>
+                  <td>Official</td>
+                </tr>
+                <tr>
+                  <th scope="row">Debian</th>
+                  <td>Buster</td>
+                  <td>ARM / x86_64</td>
+                  <td>Beta</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ubuntu</th>
+                  <td>18.04 LTS / 19.10</td>
+                  <td>ARM / x86_64</td>
+                  <td>Beta</td>
+                </tr>
+              </tbody>
+            </table>
+            </div><!--//table-responive-->
+            <p class="text-center">
+              <img class="img-fluid mt-2 mb-4" style="max-width:60%;" src="https://i.imgur.com/luiyYNw.png" alt="Linux distributions" />
+            </p>
+            <p>
+              You are also encouraged to try RaspAP's community-led <a href="https://github.com/RaspAP/raspap-docker">Docker container</a> (currently in Beta).
+            </p>
+          </div><!--//block-->
+
+          <div class="block">
+            <h3 class="sub-title text-center">Documentation and more</h3>
+            <p>Our <a href="https://docs.raspap.com/faq/">frequently asked questions (FAQ)</a> are continuously updated and are a great place to start. Need help not covered in the FAQ, have an idea or want to share your project
+            with the RaspAP community? Head over to our GitHub <a href="https://github.com/RaspAP/raspap-webgui/discussions">Discussions</a>. For everything else, dive into our official documentation.</p>
+            <p class="text-center">
+            <a class="btn btn-cta-primary" href="https://docs.raspap.com/" target="_blank">RaspAP docs</a>
+            </p>
+          </div><!--//block-->
+
+        </div><!--//docs-inner-->         
+      </div><!--//container-->
+    </section><!--//features-->
+
+    <!-- ******LICENSE****** --> 
+    <section id="license" class="license section">
+      <div class="container">
+        <div class="license-inner">
+          <h2 class="title text-center">License</h2>
+          <div class="info">
+            <code>RaspAP/raspap-webgui</code> is licensed under the <i class="fas fa-balance-scale"></i> <a href="https://github.com/RaspAP/raspap-webgui/blob/master/LICENSE">GNU General Public License v3.0</a>.</p>
+            <p>Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.</p>
+            <p>RaspAP is created by a team of <a href="https://github.com/RaspAP">dedicated developers</a> who contribute their time and expertise to improving this project.
+          </div><!--//info-->
+        </div><!--//license-inner-->
+      </div><!--//container-->
+    </section><!--//how-->
+
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+      <div class="container">
+        <div class="contact-inner">
+          <h2 class="title  text-center">Contact</h2>
+          <p class="intro text-center">Follow <a href="https://twitter.com/rasp_ap/">RaspAP on Twitter</a> for updates.</p>
+          <div class="clearfix"></div>
+          <div class="info text-center">
+            <ul class="social-icons list-inline">
+              <li class="list-inline-item last"><a href="https://twitter.com/rasp_ap/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item last"><a href="https://github.com/RaspAP/" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item last"><a href="https://www.reddit.com/r/RaspAP/" target="_blank"><i class="fab fa-reddit"></i></a></li>
+              <li class="list-inline-item last"><a href="https://github.com/sponsors/RaspAP" target="_blank"><i class="fas fa-door-open"></i></a></li>
+            </ul>
+          </div><!--//info-->
+        </div><!--//contact-inner-->
+      </div><!--//container-->
+    </section><!--//contact-->  
+
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+      <div class="container text-center">
+        <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+      </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>   
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/js/main.js"></script>  
+
+  </body>
+</html> 
+
