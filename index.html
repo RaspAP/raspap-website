@@ -222,7 +222,46 @@
         <div class="docs-inner">
           <a id="quick"></a><h2 class="title text-center">Quick Start</h2>
           <div class="block">
-            <p>Begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.
+            <p>RaspAP gives you two different ways to get up and running quickly. The simplest approach is to use a <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">custom OS image</a> with RaspAP preinstalled. This option eliminates guesswork and gives you a base upon which to build. An alternative method is to execute the Quick installer on an existing <a href="#distros">compatible OS</a>.</p>
+
+            <a id="custom"></a><h3 class="sub-title text-center">Custom OS</h3>
+            <p>Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">direct download</a>. This includes both 32- and 64-bit builds for ARM architectures.</p>
+            <div class="table-responsive-sm">
+              <table class="table table-hover table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">Distribution</th>
+                    <th scope="col">Debian version</th>
+                    <th scope="col">Kernel version</th>
+                    <th scope="col">RaspAP version</th>
+                    <th scope="col">Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Raspberry Pi OS (64-bit) Lite</th>
+                    <td>12 (bookworm)</td>
+                    <td>6.6</td>
+                    <td>Latest</td>
+                    <td>777 MB</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Raspberry Pi OS (32-bit) Lite</th>
+                    <td>12 (bookworm)</td>
+                    <td>6.6</td>
+                    <td>Latest</td>
+                    <td>805 MB</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>These images are automatically generated with each release of RaspAP and are made <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">available here</a>. You may choose between an <code>arm64</code> or <code>armhf</code> (32-bit) based build.</p>
+
+            <p>After downloading your desired image, use a utility such as the Raspberry Pi Imager or <a href="https://www.balena.io/etcher">balenaEtcher</a> to flash the OS image onto a microSD card. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure.</p>
+
+            <a id="quick"></a><h3 class="sub-title text-center">Quick installer</h3>
+            <p>Alternatively, begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.
             Update your OS to its latest version, including the kernel and firmware, followed by a reboot:.</p>
             <div class="code-block">
               <pre><code class="language-markup">
@@ -248,8 +287,10 @@
               </div><!--//code-block-->
             </div>
             <div class="mt-4">
-              <p>The <a href="https://docs.raspap.com/quick/">Quick Installer</a> will complete the steps in the <a href="https://docs.raspap.com/manual/">manual installation</a> for you.</p>
-              <p>Following a reboot, the wireless AP network will be configured as follows:</p>
+              <p>The <a href="https://docs.raspap.com/quick/">Quick installer</a> will complete the steps in the <a href="https://docs.raspap.com/manual/">manual installation</a> for you. At the end of the install process, accept the prompt to reboot your system.</p>
+
+            <a id="settings"></a><h3 class="sub-title text-center">Initial settings</h3>
+              <p>After completing either of these setup options, the wireless AP network will be configured as follows:</p>
               <ul class="list-unstyled padding-left">
                 <li><strong>IP address:</strong> 10.3.141.1</li>
                 <li><strong>Username:</strong> admin</li>
