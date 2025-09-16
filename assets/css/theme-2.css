@@ -18,11 +18,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, sans-serif;
   font-weight: 500;
-  color: #b4ca65;
+  color: #568591;
 }
 
 a {
-  color: #b4ca65;
+  color: #40646D;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -31,7 +31,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #a1bb41;
+  color: #37565e;
 }
 
 .btn, a.btn {
@@ -103,6 +103,7 @@ pre code {
   position: fixed;
   width: 100%;
   z-index: 1;
+  height: 45px;
 }
 
 .title {
@@ -124,7 +125,7 @@ pre code {
 .header .logo {
   margin: 0;
   font-size: 26px;
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .header .logo a {
@@ -192,7 +193,7 @@ pre code {
   -ms-transition: none;
   -o-transition: none;
   font-size: 14px;
-  padding: 15px 10px;
+  padding: 10px;
 }
 
 .header .main-nav .nav .nav-item .nav-link.active {
@@ -316,7 +317,7 @@ pre code {
 }
 
 .about .title {
-  color: #607026;
+  color: #40646D;
   margin-top: 0;
   /*margin-bottom: 60px;*/
 }
@@ -340,7 +341,7 @@ pre code {
 
 .about .item .icon-holder .svg-inline--fa {
   font-size: 24px;
-  color: #607026;
+  color: #40646D;
 }
 
 .about .item .content {
@@ -349,34 +350,34 @@ pre code {
 
 .about .item .content .sub-title {
   margin-top: 0;
-  color: #607026;
+  color: #40646D;
   font-size: 18px;
 }
 
 /* ======= Features Section ======= */
 .features {
   padding: 80px 0;
-  background: #b4ca65;
+  background: #40646D;
   color: #fff;
 }
 
 .features .title {
-  color: #607026;
+  color: #c4fee7;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
 .features a {
-  color: #607026;
+  color: #fff;
 }
 
 .features a:hover {
-  color: #3f4a19;
+  color: #c4fee7;
 }
 
 .features .feature-list li {
   margin-bottom: 10px;
-  color: #607026;
+  color: #c4fee7;
 }
 
 .features .feature-list li .svg-inline--fa {
@@ -391,7 +392,7 @@ pre code {
 }
 
 .docs .title {
-  color: #607026;
+  color: #40646D;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -444,7 +445,7 @@ pre code {
 .license .title {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #607026;
+  color: #40646D;
 }
 
 .license .license-inner {
@@ -526,8 +527,8 @@ pre code {
 /* ======= Contact Section ======= */
 .contact {
   padding: 15px 0;
-  background: #b4ca65;
-  color: #fff;
+  background: #40646D;
+  color: #c4fee7;
 }
 
 .contact .contact-inner {
@@ -536,7 +537,7 @@ pre code {
 }
 
 .contact .title {
-  color: #607026;
+  color: #c4fee7;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -546,11 +547,11 @@ pre code {
 }
 
 .contact a {
-  color: #607026;
+  color: #fff;
 }
 
 .contact a:hover {
-  color: #3f4a19;
+  color: #c4fee7;
 }
 
 .contact .author-message {
@@ -653,7 +654,7 @@ pre code {
 
 .contact .social-icons a {
   display: inline-block;
-  background: #90a93a;
+  background: #32425B;
   width: 48px;
   height: 48px;
   text-align: center;
@@ -684,7 +685,7 @@ pre code {
 /* ======= Footer ======= */
 .footer {
   padding: 15px 0;
-  background: #3f4a19;
+  background: #32425B;
   color: #fff;
 }
 
