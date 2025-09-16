@@ -70,16 +70,16 @@ a.btn-cta-primary:hover, .btn-cta-primary:hover {
 }
 
 a.btn-cta-secondary, .btn-cta-secondary {
-  background: #dd7c4f;
-  border: 1px solid #dd7c4f;
+  background: #DA7C1E;
+  border: 1px solid #DA7C1E;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 a.btn-cta-secondary:hover, .btn-cta-secondary:hover {
-  background: #d96c3a;
-  border: 1px solid #d96c3a;
+  background: #c9721c;
+  border: 1px solid #c9721c;
   color: #fff;
 }
 
@@ -255,10 +255,11 @@ pre code {
   font-size: 98px;
   color: #c4fee7;
   margin-top: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .promo .title .highlight {
-  color: #dd7c4f;
+  color: #DA7C1E;
 }
 
 .promo .intro {
