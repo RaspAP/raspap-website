@@ -1,3 +1,3 @@
 ## raspap-website
 
-![](https://i.imgur.com/8xLBHwy.png)
+![](https://i.imgur.com/1dvkMDk.jpeg)
