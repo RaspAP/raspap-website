@@ -227,7 +227,7 @@ pre code {
   .bg-image {
     background-image: url('../images/moonbase-alt.jpg');
     background-repeat: no-repeat;
-    background-position: right 0px top 0px;
+    background-position: right 0px top 30px;
     background-size: 1480px;
     min-height: 800px;  
   }
