@@ -149,7 +149,7 @@ pre code {
   padding: 8px 8px;
   right: 10px;
   top: 10px;
-  background: #607026;
+  background: #32425B;
 }
 
 .header .main-nav .navbar-toggler:focus {
@@ -213,10 +213,6 @@ pre code {
 .header .main-nav .nav .nav-item .nav-link:active {
   outline: none;
   background: none;
-}
-
-.header .main-nav .nav .nav-item.last {
-  margin-right: 0;
 }
 
 /* ======= Promo Section ======= */
@@ -712,7 +708,7 @@ pre code {
     left: 0;
     top: 60px;
     position: absolute;
-    background: #fff;
+    background: #40646D;
   }
   .header .main-nav .navbar-collapse .navbar-nav {
     margin-left: 10px;
