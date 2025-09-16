@@ -97,11 +97,15 @@ pre code {
 
 /* ======= Header ======= */
 .header {
-  padding: 10px 0;
+  padding: 0px 0;
   background: #b1d467;
   color: #fff;
   position: fixed;
   width: 100%;
+}
+
+.title {
+  margin-top: 0rem !important;
 }
 
 .header.navbar-fixed-top {
@@ -223,10 +227,11 @@ pre code {
 
 @media (min-width: 992px) {
   .bg-image {
-    background-image: url('../images/raspap-wifi.png');
+    background-image: url('../images/moonbase-alt.jpg');
     background-repeat: no-repeat;
     background-position: right 0px top 0px;
-    background-size: 775px;
+    background-size: 1480px;
+    min-height: 800px;  
   }
   .promo.container {
     text-align: left!important;
@@ -250,7 +255,7 @@ pre code {
 
 .promo .title {
   font-size: 98px;
-  color: #232b2b;
+  color: #c4fee7;
   margin-top: 0;
 }
 
@@ -261,8 +266,8 @@ pre code {
 .promo .intro {
   font-size: 20px;
   max-width: 400px;
-  /*margin: 0 auto;*/
   margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .promo .btns .btn {
@@ -272,9 +277,10 @@ pre code {
 }
 
 .promo .meta {
-  margin-top: 120px;
+  margin-top: 20px;
   margin-bottom: 30px;
-  color: #809633;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .promo .meta li {
@@ -282,11 +288,12 @@ pre code {
 }
 
 .promo .meta a {
-  color: #809633;
+  color:#c4fee7;
+  font-size: 1.1rem;
 }
 
 .promo .meta a:hover {
-  color: #607026;
+  color: #fff;
 }
 
 .promo .social-media {
@@ -521,7 +528,7 @@ pre code {
 
 /* ======= Contact Section ======= */
 .contact {
-  padding: 80px 0;
+  padding: 15px 0;
   background: #b4ca65;
   color: #fff;
 }
