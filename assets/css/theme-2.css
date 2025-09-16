@@ -56,16 +56,16 @@ a:hover {
 }
 
 a.btn-cta-primary, .btn-cta-primary {
-  background: #607026;
-  border: 1px solid #607026;
+  background: #32425B;
+  border: 1px solid #32425B;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 a.btn-cta-primary:hover, .btn-cta-primary:hover {
-  background: #4f5d20;
-  border: 1px solid #4f5d20;
+  background: #2e3d54;
+  border: 1px solid #2e3d54;
   color: #fff;
 }
 
@@ -98,10 +98,11 @@ pre code {
 /* ======= Header ======= */
 .header {
   padding: 0px 0;
-  background: #b1d467;
+  background: #40646D;
   color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 
 .title {
@@ -185,7 +186,7 @@ pre code {
 }
 
 .header .main-nav .nav .nav-item .nav-link {
-  color: #70832d;
+  color:#c4fee7;
   -webkit-transition: none;
   -moz-transition: none;
   -ms-transition: none;
@@ -195,12 +196,12 @@ pre code {
 }
 
 .header .main-nav .nav .nav-item .nav-link.active {
-  color: #b4ca65;
+  color: #fff;
   background: none;
 }
 
 .header .main-nav .nav .nav-item .nav-link:hover {
-  color: #607026;
+  color: #fff;
   background: none;
 }
 
