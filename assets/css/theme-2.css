@@ -181,7 +181,7 @@ pre code {
 }
 
 .header .main-nav .nav .nav-item {
-  font-weight: bold;
+  font-weight: normal;
   margin-right: 30px;
   font-family: 'Montserrat', sans-serif;
 }
