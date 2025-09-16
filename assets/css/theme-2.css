@@ -685,7 +685,7 @@ pre code {
 /* ======= Footer ======= */
 .footer {
   padding: 15px 0;
-  background: #32425B;
+  background: #40646D;
   color: #fff;
 }
 
@@ -693,6 +693,10 @@ pre code {
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
   opacity: 0.8;
+}
+
+.copyright a {
+  color: #fff;
 }
 
 .footer .fa-heart {
