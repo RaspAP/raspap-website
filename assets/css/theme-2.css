@@ -228,7 +228,7 @@ pre code {
     background-image: url('../images/moonbase-alt.jpg');
     background-repeat: no-repeat;
     background-position: right 0px top 30px;
-    background-size: 1480px;
+    background-size: cover;
     min-height: 800px;  
   }
   .promo.container {
