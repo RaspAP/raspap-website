@@ -7,8 +7,8 @@ authors:
     - ruralmeltdown
 ---
 
-<img src="/blog/assets/images/john-moeses-bauan-6mQLmJtLkEM-unsplash.jpg" width="600px"><br/>
-<sub>_Photo by <a href="https://unsplash.com/@johnmoeses?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">John Moeses Bauan</a> on <a href="https://unsplash.com/photos/a-cat-wearing-a-harness-sleeping-on-a-computer-desk-6mQLmJtLkEM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>_</sub><br/>
+<img src="/blog/assets/images/claudio-schwarz-v2MJSgfBT70-unsplash.jpg" width="600px"><br/>
+<sub>_Photo by <a href="https://unsplash.com/@purzlbaum?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Claudio Schwarz</a> on <a href="https://unsplash.com/photos/white-and-red-train-in-tunnel-v2MJSgfBT70?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>_</sub><br/>
 
 ## Introduction
 Welcome to the inaugural post for our new blog on our refreshed website! Have a read-through below to see what we've been up to this year. We look forward to hearing from you, whether it's a [feature request or bug report](https://github.com/raspap/raspap-webgui/issues), just to say "hi" in [Discord](https://discord.gg/KVAsaAR), or join our [Insiders](https://github.com/sponsors/RaspAP) for more features or to support our work.
