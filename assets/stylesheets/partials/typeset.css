@@ -1,0 +1,122 @@
+/* -----------------------------------------
+    TYPESET STYLING
+-------------------------------------------*/
+.md-typeset {
+    font-size: var(--fs-text-l);
+    line-height: 1.4;
+    letter-spacing: 0.15px;
+}
+
+/* || ------ IMAGES ------ */
+.md-content__inner img {
+    /* box-shadow: var(--md-shadow-z2); */
+    border-radius: var(--md-border-radius);
+}
+
+/* || ------ CONTENT LINKS ------ */
+.md-content__inner a {
+    color: var(--fc-primary);
+}
+.md-content__inner a:hover {
+    color: var(--md-title-color);
+}
+
+/* || ------ HEADINGS ------ */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {
+    font-family: "Inter", "Encode Sans", serif;
+    font-style: normal;
+    overflow-wrap: break-word;
+    color: var(--fc-base-main);
+    text-rendering: optimizeLegibility;
+    margin-block: 0.8em;
+}
+
+.md-typeset h1 a:hover, 
+.md-typeset h2 a:hover, 
+.md-typeset h3 a:hover, 
+.md-typeset h4 a:hover, 
+.md-typeset h5 a:hover, 
+.md-typeset h6 a:hover {
+    border: none;
+}
+
+.md-post__content .toclink {
+    color: var(--fc-base-main);
+}
+
+/* Remove spacing if H2 comes right after H1 */
+.md-typeset h1:has(+ h2) {
+    margin: 0 0 1rem;
+}
+.md-typeset h1 + h2 {
+    margin: 0 0 17.6px;
+}
+
+/* || ------ HEADINGS SIZES ------ */
+.md-typeset h1, .h1 {
+    font-size: var(--fs-display-m);
+    margin-block: 0.4em;
+    letter-spacing: -0.01em;
+    font-weight: var(--fw-bold);
+}
+
+.md-typeset h2, .h2 {
+    font-size: var(--fs-headline-s);
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    font-weight: var(--fw-bold);
+}
+
+.md-typeset h3 {
+    font-size: var(--fs-headline-xs);
+    line-height: 38px;
+    letter-spacing: -0.01em;
+    font-weight: var(--fw-semibold);
+}
+
+.md-typeset h4 {
+    font-size: var(--fs-headline-xss);
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    font-weight: var(--fw-semibold);
+}
+
+.md-typeset h5 {
+    font-size: calc(var(--fs-headline-xxs) * 0.8);
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    font-weight: var(--fw-medium);
+    text-transform: none;
+}
+
+.md-typeset h6 {
+    font-size: calc(var(--fs-headline-xxs) * 0.6);
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    font-weight: var(--fw-medium);
+    text-transform: none;
+}
+
+/* || --- HEADERLINKS --- || */
+.md-typeset .headerlink {
+    --hl-size: 1.125rem;
+    width: var(--hl-size);
+    height: var(--hl-size);
+    vertical-align: middle;
+    background-color: var(--md-default-fg-color--lighter);
+    background-size: var(--hl-size);
+    -webkit-mask-size: var(--hl-size);
+    mask-size: var(--hl-size);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    visibility: visible;
+    border-bottom: 0;
+    text-indent: -9999px;
+    -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>');
+    mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>');
+}
+
+.md-typeset .headerlink:hover {
+    border: 0;
+    background-color: var(--md-accent-fg-color);
+}

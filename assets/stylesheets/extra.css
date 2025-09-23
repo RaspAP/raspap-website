@@ -1,0 +1,189 @@
+/* --- Google fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Global Fixes */
+html { 
+    /* scrollbar-gutter: stable; */
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Klipper Error admonition */
+:root {
+
+    --klipper-text-color: #ff5252;
+    --klipper-border-color: #642929;
+    --klipper-bg-color: #2e1a1a;
+
+    --klipper2-text-color: #fb8c00;
+    --klipper2-border-color: #633c0c;
+    --klipper2-bg-color: #2e2010;
+
+    --md-admonition-icon--klipper-error: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"></path></svg>');
+
+
+    /* KLIPPER ERROR */
+    .md-typeset .admonition.klipper-error {
+        color: var(--klipper-text-color);
+        background-color: var(--klipper-bg-color);
+        font-size: .8rem;
+    }
+
+    .md-typeset .admonition.klipper-error,
+    .md-typeset details.klipper-error {
+        border-color: var(--klipper-border-color);
+    }
+    .md-typeset .klipper-error > .admonition-title  {
+        font-size: .8rem;
+        background-color: var(--klipper-bg-color) !important;
+    }
+    .md-typeset .klipper-error > .admonition-title::before,
+    .md-typeset .klipper-error > summary::before {
+        background-color: var(--klipper-text-color);
+        -webkit-mask-image: var(--md-admonition-icon--klipper-error);
+        mask-image: var(--md-admonition-icon--klipper-error);
+    }
+
+
+    /* KLIPPER SHUTDOWN */
+    .md-typeset .admonition.klipper-shutdown {
+        color: var(--klipper2-text-color);
+        background-color: var(--klipper2-bg-color);
+        font-size: .8rem;
+    }
+
+    .md-typeset .admonition.klipper-shutdown,
+    .md-typeset details.klipper-shutdown {
+        border-color: var(--klipper2-border-color);
+    }
+    .md-typeset .klipper-shutdown > .admonition-title  {
+        font-size: .8rem;
+        background-color: var(--klipper2-bg-color) !important;
+    }
+    .md-typeset .klipper-shutdown > .admonition-title::before,
+    .md-typeset .klipper-shutdown > summary::before {
+        background-color: var(--klipper2-text-color);
+        -webkit-mask-image: var(--md-admonition-icon--klipper-error);
+        mask-image: var(--md-admonition-icon--klipper-error);
+    }
+
+    /* Lower opacity on light mode */
+    .md-typeset .admonition.klipper-error, .md-typeset .admonition.klipper-shutdown {
+        opacity: .8;
+    }
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.klipper-error, [data-md-color-scheme="slate"] .md-typeset .admonition.klipper-shutdown {
+    opacity: 1;
+}
+
+/* status: new different color to make it stand out more */
+.md-status:after {
+    background-color: var(--md-admonition-success-color);
+}
+
+/* Custom beta jekyll frontmatter variable */
+.md-beta {
+    position: absolute;
+    position-anchor: --betaAnchor;
+    right: anchor(right);
+    top: anchor(top);
+    transform: translateX(3rem) translateY(calc(var(--fs-display-m) * 0.5));
+
+
+    color: rgb(33, 112, 5);
+    background-color: rgb(209, 250, 179);
+    border: 1px solid rgb(168, 241, 112);
+    padding: 2px 6px;
+    border-radius: var(--br-04);
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 16px;
+}
+
+.md-content__inner h1 {
+    anchor-name: --betaAnchor;
+    width: fit-content;
+}
+
+/* --------------------
+
+    New Header styling
+
+--------------------- */
+
+.md-header__title {
+    width: fit-content;
+    margin: 0;
+    flex: 0 0 7rem;
+    margin-left: 0 !important;
+}
+
+.md-tabs {
+    width: fit-content;
+    flex-grow: 1;
+}
+
+.void {
+    flex-grow: 1;
+}
+
+.md-header__topic .mdx-header--logo svg {
+    display: inline-block;
+    height: 20px;
+    transform: translateY(.2rem);
+}
+
+[dir=ltr] .md-header__source {
+    margin-left: 0;
+}
+
+/* move header topic and scale fontsize down */
+[data-md-component="header-topic"].md-header__topic {
+    font-size: .55rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.4rem;
+}
+
+.md-header__title--active .md-header__topic {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Tabs navigation */
+:dir(ltr) .md-tabs__list {
+    margin-left: 0;
+    padding-bottom: 0.2rem;
+}
+
+:dir(rtl) .md-tabs__list {
+    margin-right: 0;
+}
+
+/* --- Increase content width --- */
+.md-grid--wide {
+    max-width: 100%;
+    gap: 10px;
+    padding-inline: 1.1rem;
+}
+
+@media screen and (min-width: 60em) {
+    .md-grid--wide {
+        gap: 30px;
+    }
+}
+
+/* beating heart */
+.heart img {
+    animation: heartbeat 1s infinite ease;
+}
+
+@keyframes heartbeat {
+    0%, 10% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    60% { transform: scale(1.15); }
+    75% { transform: scale(1.2); }
+}
+
