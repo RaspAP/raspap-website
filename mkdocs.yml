@@ -59,19 +59,14 @@ theme:
     - navigation.expand
     - navigation.prune
     - navigation.footer
-    - navigation.instant
-    - navigation.instant.progress
+    #- navigation.instant
+    #- navigation.instant.progress
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
 
-    #Insiders only
-    - navigation.path
-    - navigation.instant.prefetch
-
-#Extra styling CSS/Java
 extra_css:
   - assets/stylesheets/extra.css
 
