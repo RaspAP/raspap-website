@@ -6,8 +6,8 @@ authors:
     - billz
 ---
 
-<img src="/blog/assets/images/traffic-light.webp" width="600px"><br/>
-<sub>_Photo by <a href="https://unsplash.com/@eliobedsuarez?utm_source=raspap">Eliobed Suarez</a> on <a href="https://unsplash.com/?utm_source=raspap">Unsplash</a>_</sub>
+<img src="/blog/assets/images/alex-king-lbwjS4QdpNU-unsplash.jpg" width="600px"><br/>
+<sub>_Photo by <a href="https://unsplash.com/@stagfoo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex King</a> on <a href="https://unsplash.com/photos/turn-on-traffic-light-lbwjS4QdpNU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>_</sub>
 
 LED traffic indicators are common on most networking devices, from home routers, to commercial equipment and Ethernet-equipped Raspberry Pis.
 
