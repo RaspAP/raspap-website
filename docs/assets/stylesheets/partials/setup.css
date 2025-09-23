@@ -1,0 +1,58 @@
+:root {
+    /* Multiplier */
+    --scale-factor: 0.8;
+
+    /* Responsive text */
+    --fs-display-l: calc(clamp(2.5rem, 1.5767vw + 2.1305rem, 3.313rem) * var(--scale-factor));
+    --fs-display-m: calc(clamp(2.25rem, .4848vw + 2.1364rem, 2.5rem) * var(--scale-factor));
+    --fs-headline-xl: var(--fs-display-m);
+    --fs-headline-l: calc(clamp(2rem, .4848vw + 1.8864rem, 2.25rem) * var(--scale-factor));
+    --fs-headline-m: calc(clamp(1.75rem, .4848vw + 1.6364rem, 2rem) * var(--scale-factor));
+    --fs-headline-s: calc(clamp(1.5rem, .4848vw + 1.3864rem, 1.75rem) * var(--scale-factor));
+    --fs-headline-xs: calc(clamp(1.25rem, .2424vw + 1.1932rem, 1.375rem) * var(--scale-factor));
+    --fs-headline-xxs: calc(clamp(1.125rem, .2424vw + 1.0682rem, 1.25rem) * var(--scale-factor));
+
+    /* Body */
+    --fs-text-xl: calc(1.125rem * var(--scale-factor));
+    --fs-text-l: calc(1rem * var(--scale-factor));
+    --fs-text-m: calc(0.938rem * var(--scale-factor));
+    --fs-text-s: calc(0.875rem * var(--scale-factor));
+    --fs-text-xs: calc(0.813rem * var(--scale-factor));
+    --fs-text-xxs: calc(0.65rem * var(--scale-factor));
+
+    /* Font-weights */
+    --fw-light: calc(300 * var(--scale-factor));
+    --fw-regular: calc(400 * var(--scale-factor));
+    --fw-medium: calc(500 * var(--scale-factor));
+    --fw-semibold: calc(600 * var(--scale-factor));
+    --fw-bold: calc(700 * var(--scale-factor));
+
+    /* Padding | Gap | Margin */
+    --size-08: calc(0.5rem * var(--scale-factor)); /* 8px */
+    --size-12: calc(0.75rem * var(--scale-factor)); /* 12px */
+    --size-16: calc(1rem * var(--scale-factor)); /* 16px */
+    --size-20: calc(1.25rem * var(--scale-factor)); /* 20px */
+    --size-24: calc(1.5rem * var(--scale-factor)); /* 24px */
+    --size-32: calc(2rem * var(--scale-factor)); /* 32px */
+    --size-40: calc(2.5rem * var(--scale-factor)); /* 40px */
+    --size-48: calc(3rem * var(--scale-factor)); /* 48px */
+    --size-64: calc(4rem * var(--scale-factor)); /* 64px */
+    --size-112: calc(7rem * var(--scale-factor)); /* 112px */
+
+    /* Grid gutter Mobile 12 */
+    --gutter: var(--size-12);
+    /* Grid gutter Tablet 24 */
+    /* Grid gutter Desktop 32 */
+
+    /* Border radius */
+    --br-04: 4px;
+    --br-06: 6px;
+    --br-08: 8px;
+    --br-12: 12px;
+    --br-16: 16px;
+    --br-20: 20px;
+    --br-24: 24px;
+
+    --md-transition-duration: 0.2s;
+    --md-border-radius: 5px;
+}

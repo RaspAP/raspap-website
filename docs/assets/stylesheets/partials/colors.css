@@ -1,0 +1,236 @@
+:root {
+  --base-white: hsla(0, 100%, 100%, 1);
+  --base-black: hsla(0, 0%, 0%, 1);
+
+  /* Dark | Grey */
+  --grey-25: hsla(220, 5%, 61%, 1);
+  --grey-50: hsla(214, 7%, 55%, 1);
+  --grey-100: hsla(213, 13%, 40%, 1);
+  --grey-200: hsla(213, 13%, 37%, 1);
+  --grey-300: hsla(213, 12%, 34%, 1);
+  --grey-400: hsla(212, 11%, 30%, 1);
+  --grey-500: hsla(214, 10%, 27%, 1);
+  --grey-600: hsla(213, 9%, 24%, 1);
+  --grey-700: hsla(214, 7%, 21%, 1);
+  --grey-800: hsla(210, 4%, 18%, 1);
+  --grey-900: hsla(0, 0%, 15%, 1);
+  --grey-950: hsla(0, 0%, 9%, 1);
+  --grey-990: hsla(0, 0%, 5%, 1);
+
+  /* Light | White */
+  --neutral-25: hsla(240, 20%, 99%, 1);
+  --neutral-50: hsla(210, 25%, 98%, 1);
+  --neutral-100: hsla(220, 27%, 98%, 1);
+  --neutral-200: hsla(0, 0%, 98%, 1);
+  --neutral-300: hsla(240, 7%, 97%, 1);
+  --neutral-400: hsla(0, 0%, 96%, 1);
+  --neutral-500: hsla(240, 7%, 94%, 1);
+  --neutral-600: hsla(230, 17%, 93%, 1);
+  --neutral-700: hsla(240, 4%, 90%, 1);
+  --neutral-800: hsla(220, 2%, 77%, 1);
+  --neutral-900: hsla(224, 6%, 65%, 1);
+  --neutral-950: hsla(220, 6%, 61%, 1);
+
+  /* Primary blue */
+  --primary-blue-25: hsla(210, 73%, 96%, 1);
+  --primary-blue-50: hsla(213, 100%, 91%, 1);
+  --primary-blue-100: hsla(213, 100%, 85%, 1);
+  --primary-blue-200: hsla(213, 100%, 78%, 1);
+  --primary-blue-300: hsla(213, 100%, 72%, 1);
+  --primary-blue-400: hsla(213, 100%, 65%, 1);
+  --primary-blue-500: hsla(213, 100%, 59%, 1);
+  --primary-blue-600: hsla(213, 100%, 52%, 1);
+  --primary-blue-700: hsla(213, 88%, 47%, 1);
+  --primary-blue-800: hsla(216, 84%, 43%, 1);
+  --primary-blue-900: hsla(218, 77%, 39%, 1);
+  --primary-blue-950: hsla(221, 70%, 35%, 1);
+
+  --footer-clr-bg: hsl(220, 8%, 31%);
+
+  /* Admonitions */
+  --md-admonition-note-color: #448aff;
+  --md-admonition-abstract-color: #00b0ff;
+  --md-admonition-info-color: #00b8d4;
+  --md-admonition-tip-color: #00bfa5;
+  --md-admonition-success-color: #00c853;
+  --md-admonition-question-color: #64dd17;
+  --md-admonition-warning-color: #ff9100;
+  --md-admonition-failure-color: #ff5252;
+  --md-admonition-danger-color: #ff1744;
+  --md-admonition-bug-color: #f50057;
+  --md-admonition-example-color: #7c4dff;
+  --md-admonition-quote-color: #9e9e9e;
+
+  /* Custom */
+  --md-title-color: var(--fc-base-main);
+  --md-content-color-lighter: var(--neutral-600);
+  --md-content-color-lightest: var(--base-white);
+  --md-table-top-color: hsl(240, 2%, 16%);
+  --md-typeset-color--lighter: hsla(240, 1%, 65%, 0.2);
+  --md-typeset-color-white: hsl(0, 0%, 98%);
+  --md-border-color: hsl(240, 3%, 29%);
+
+  --primary-medium-aqua: #529fb2;
+  --primary-dark-aqua: #2B3145;
+  --primary-med-light-aqua: #7FC8D4;
+  --primary-light-aqua: #c4fee7;
+}
+
+:root > * {
+  /* Text & Icons | LightMode */
+  --fc-base-main: var(--footer-clr-bg);
+  --fc-base-second: var(--grey-50);
+  --fc-on-color: var(--base-white);
+  --fc-disabled: var(--neutral-700);
+  --fc-primary: var(--primary-blue-600);
+
+  /* Background | Lightmode */
+  --bg-base-main: var(--base-white);
+  --bg-base-second: var(--neutral-100);
+  --bg-primary-main: var(--primary-blue-600);
+  --bg-primary-second: var(--primary-blue-25);
+  --bg-disabled: var(--neutral-700);
+
+  /* Stroke | Lightmode */
+  --st-base-main: var(--neutral-700);
+  --st-base-primary: var(--primary-blue-700);
+
+  /* Custom */
+  --md-title-color: var(--fc-base-main);
+  --md-content-color-lighter: var(--base-white);
+  --md-content-color-lightest: var(--st-base-main);
+  --md-content-color-darker: var(--neutral-900);
+  --md-table-top-color: var(--grey-900);
+
+  /* Primary color shades */
+  --md-primary-fg-color: var(--footer-clr-bg);
+  --md-primary-fg-color--light: var(--base-white);
+  --md-primary-fg-color--dark: var(--grey-600);
+  --md-primary-bg-color: var(--neutral-200);
+  --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+  /* Accent color shades */
+  --md-accent-fg-color: #da7c1e;
+  --md-accent-fg-color--transparent: hsla(207, 90%, 54%, 0.2);
+  --md-accent-bg-color: hsla(0, 0%, 100%, 1);
+  --md-accent-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+  /* Default color shades */
+  --md-default-fg-color: hsla(0, 0%, 0%, 0.87);
+  --md-default-fg-color--light: hsla(0, 0%, 0%, 0.54);
+  --md-default-fg-color--lighter: hsla(0, 0%, 0%, 0.32);
+  --md-default-fg-color--lightest: hsla(0, 0%, 0%, 0.07);
+  --md-default-bg-color: hsl(240, 20%, 98%);
+  --md-default-bg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-default-bg-color--lighter: hsla(0, 0%, 100%, 0.3);
+  --md-default-bg-color--lightest: hsla(0, 0%, 100%, 0.12);
+
+  /* Code color shades */
+  --md-code-fg-color: hsla(200, 18%, 26%, 1);
+  --md-code-bg-color: var(--neutral-700);
+
+  /* Code highlighting color shades */
+  --md-code-hl-color: var(--md-accent-fg-color) !important;
+  --md-code-hl-color--light: var(--md-accent-fg-color--transparent) !important;
+
+  /* Typeset color shades */
+  --md-typeset-color: var(--grey-100);
+
+  /* Typeset `a` color shades */
+  --md-typeset-a-color: var(--grey-600) !important;
+
+  /* Typeset `table` color shades */
+  --md-typeset-table-color: hsla(var(--md-hue), 15%, 95%, 0.12);
+  --md-typeset-table-color--light: hsla(var(--md-hue), 15%, 95%, 0.035);
+
+  /* Admonition color shades */
+  --md-admonition-fg-color: var(--md-default-fg-color);
+  --md-admonition-bg-color: var(--md-default-bg-color);
+
+  /* Warning color shades */
+  --md-warning-fg-color: hsla(0, 0%, 0%, 0.87);
+  --md-warning-bg-color: hsla(60, 100%, 80%, 1);
+
+  /* Footer color shades */
+  --md-footer-fg-color: var(--neutral-200);
+  --md-footer-fg-color--light: hsla(0, 0%, 100%, 0.7);
+  --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.45);
+  --md-footer-bg-color: var(--neutral-800);
+  --md-footer-bg-color--dark: var(--footer-clr-bg);
+}
+
+@media screen {
+  [data-md-color-scheme="slate"] {
+      /* Text & Icons | DarkMode */
+      --fc-base-main: var(--neutral-200);
+      --fc-base-second: var(--grey-25);
+      --fc-on-color: var(--base-white);
+      --fc-disabled: var(--grey-200);
+      --fc-primary: var(--primary-blue-600);
+
+      /* Background | Darkmode */
+      --bg-base-main: var(--grey-950);
+      --bg-base-second: var(--grey-900);
+      --bg-base-third: var(--grey-800);
+      --bg-primary-main: var(--primary-blue-600);
+      --bg-primary-second: var(--grey-800);
+      --bg-disabled: var(--grey-800);
+
+      /* Stroke | Darkmode */
+      --st-base-main: var(--grey-700);
+      --st-base-primary: var(--primary-blue-600);
+
+      /* Custom */
+      --md-title-color: var(--fc-base-main);
+      --md-content-color-lighter: var(--grey-900);
+      --md-content-color-lightest: var(--st-base-main);
+      --md-content-color-darker: var(--grey-400);
+      --md-table-top-color: hsl(228, 10%, 6%);
+
+      /* Primary color shades */
+      --md-primary-fg-color: var(--grey-990);
+      --md-primary-fg-color--light: var(--base-white);
+      --md-primary-fg-color--dark: var(--grey-600);
+      --md-primary-bg-color: var(--neutral-200);
+      --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
+
+      /* Default color shades */
+      --md-default-fg-color: hsla(var(--md-hue), 15%, 90%, 0.82);
+      --md-default-fg-color--light: hsla(var(--md-hue), 15%, 90%, 0.56);
+      --md-default-fg-color--lighter: hsla(var(--md-hue), 15%, 90%, 0.32);
+      --md-default-fg-color--lightest: hsla(var(--md-hue), 15%, 90%, 0.12);
+      --md-default-bg-color: var(--bg-base-main);
+      --md-default-bg-color--light: hsla(var(--md-hue), 15%, 14%, 0.54);
+      --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 14%, 0.26);
+      --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 14%, 0.07);
+
+      /* Code color shades */
+      --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 0.82);
+      --md-code-bg-color: var(--grey-900);
+
+      /* Code highlighting color shades */
+      --md-code-hl-color: hsla(#{hex2hsl($clr-blue-a400)}, 1);
+      --md-code-hl-color--light: hsla(#{hex2hsl($clr-blue-a400)}, 0.1);
+
+      /* Typeset color shades */
+      --md-typeset-color: var(--fc-base-second);
+
+      /* Typeset `a` color shades */
+      --md-typeset-a-color: var(--base-white) !important;
+
+      /* Typeset `table` color shades */
+      --md-typeset-table-color: hsla(var(--md-hue), 15%, 95%, 0.12);
+      --md-typeset-table-color--light: hsla(var(--md-hue), 15%, 95%, 0.035);
+
+      /* Admonition color shades */
+      --md-admonition-fg-color: var(--md-default-fg-color);
+      --md-admonition-bg-color: var(--md-default-bg-color);
+
+      /* Footer color shades */
+      --md-footer-fg-color: var(--neutral-200);
+      --md-footer-fg-color--light: hsla(0, 0%, 100%, 0.7);
+      --md-footer-fg-color--lighter: hsla(0, 0%, 100%, 0.45);
+      --md-footer-bg-color: var(--grey-900);
+      --md-footer-bg-color--dark: var(--grey-990);
+  }
+}

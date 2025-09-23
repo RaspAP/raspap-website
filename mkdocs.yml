@@ -1,0 +1,165 @@
+# Project information
+site_name: The Debian wireless router
+site_url: https://raspap.com
+site_author: RaspAP Community
+site_description: >-
+  The easiest, full-featured wireless router setup for Debian-based devices. Period.
+
+# Repository
+repo_name: RaspAP/raspap-website
+repo_url: https://github.com/RaspAP/raspap-website
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2025 - All rights reserved
+
+theme:
+  name: material
+  custom_dir: custom/overrides
+  language: en
+
+  font:
+    text: Inter
+    code: Roboto Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/solid/w
+    annotation: material/plus-circle
+
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.footnote.tooltips
+    - content.action.edit
+    #- content.action.view
+    - content.tooltips
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.expand
+    - navigation.prune
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+    #Insiders only
+    - navigation.path
+    - navigation.instant.prefetch
+
+#Extra styling CSS/Java
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Plugins
+plugins:
+  - blog:
+      archive_date_format: yyyy
+      archive_url_date_format: yyyy
+      draft: true
+      post_url_format: "{slug}"
+      blog_toc: true
+  - search:
+      lang: en
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+  - open-in-new-tab
+
+  # INSIDERS=1 mkdocs build
+  - group:
+      enabled: !ENV INSIDERS
+      plugins:
+        - optimize
+        - social
+        - typeset
+
+extra:
+  status:
+    <identifier>: <description>
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  #generator: false
+  social:
+    - icon: simple/github
+      link: https://github.com/RaspAP
+    - icon: simple/discord
+      link: https://discord.gg/KVAsaAR
+    - icon: simple/reddit
+      link: https://reddit.com/r/RaspAP
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/Rasp_AP
+# Extensions
+markdown_extensions:
+  #- stepslist
+  - abbr
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.blocks.caption
+  - toc:
+      title: On this page
+      permalink: true
+      toc_depth: 3
+        
+  - tables
+  - admonition
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Page tree
+nav:
+  - Home: index.md
+  - Quick Start:
+    - quick-start.md
+  - Blog:
+    - blog/index.md
+  - Status:
+    - https://stats.uptimerobot.com/TDu7wXbKue
+watch:
+  - docs
+  - custom/overrides
+  - mkdocs.yml

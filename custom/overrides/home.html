@@ -1,0 +1,19 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "main.html" %}
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/reset.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/home.css' | url }}">
+{% endblock %}
+{% block tabs %}
+  {{ super() }}
+  <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <section class="lp-container">
+      {% include "partials/hero.html" %}
+      {% include "partials/features.html" %}
+      {% include "partials/components.html" %}
+      {% include "partials/calltoaction.html" %}
+  </section>
+{% endblock %}

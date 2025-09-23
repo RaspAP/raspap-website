@@ -1,0 +1,233 @@
+/* || ------ BREAKLINES ------ */
+
+.md-typeset hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-bottom:var(--md-border-color) 1px solid;
+}
+
+
+/* || ------ KEYBUTTONS ------ */
+
+.md-typeset kbd {
+    background-color: var(--md-code-bg-color);
+    border-radius: var(--md-border-radius);
+    box-shadow: none;
+    border-bottom: var(--md-content-color-darkest) 3px solid;
+    box-shadow: var(--md-shadow-z2);
+    padding: 0.1rem 0.3rem;
+    font-size: var(--fs-text-xxs);
+}
+
+[data-md-color-scheme="slate"] .md-typeset kbd {
+    background-color: var(--md-code-bg-color);
+    border-bottom: var(--md-default-bg-color) 3px solid;
+}
+
+/* || ------ CODEBLOCKS ------ */
+
+/* Center codeblocks */
+@media screen and (max-width: 44.9375em) {
+    .md-content__inner>.highlight {
+        margin: 1em auto;
+    }
+}
+
+.md-typeset code {
+    padding:2px;
+}
+
+/* Remove background on code icons and when hovering */
+.md-code__nav, :hover>.md-code__nav {
+    background: none;
+}
+.md-code__button {
+    color: var(--md-default-fg-color--light);
+}
+:hover>*>.md-code__button {
+    color: var(--fc-base-main);
+}
+
+.md-typeset code, .md-typeset .linenos {
+    background: var(--md-code-bg-color);
+}
+
+.md-typeset .md-code__content {
+    border-radius: var(--md-border-radius);
+}
+
+/* Style codeblocks that have line numers or title */
+.md-typeset .highlighttable tbody .filename, .md-typeset .highlight .filename {
+    border-radius: 0;
+    border-top-left-radius: var(--md-border-radius);
+    border-top-right-radius: var(--md-border-radius);
+}
+.md-typeset .highlighttable tbody .linenos {
+    border-radius: 0;
+    border-top-left-radius: var(--md-border-radius);
+    border-bottom-left-radius: var(--md-border-radius);
+}
+/* Change linenos numbercolor since they're links */
+.linenos a {
+    color: var(--md-code-fg-color) !important;
+}
+
+.md-typeset .highlighttable tbody .code code {
+    border-radius: 0;
+    border-top-right-radius: var(--md-border-radius);
+    border-bottom-right-radius: var(--md-border-radius);
+}
+
+/* Remove border radius if line numbered codeblock has filename */
+.highlighttable:has(.filename) .linenos {
+    border-top-left-radius: 0 !important;
+}
+.highlighttable:has(.filename) code {
+    border-top-right-radius: 0 !important;
+}
+
+/* Style tabbed blocks */
+.md-typeset .tabbed-set .tabbed-labels {
+    background:var(--md-table-top-color);
+    border-top-left-radius: var(--md-border-radius);
+    border-top-right-radius: var(--md-border-radius);
+}
+
+/* Force link colors */
+.js .md-typeset .tabbed-labels label a, .js .md-typeset .tabbed-labels label a code {
+    color: var(--base-white) !important;
+}
+.js .md-typeset .tabbed-labels label a:hover, .js .md-typeset .tabbed-labels label a:hover code {
+    color: var(--grey-200) !important;
+}
+
+.js .md-typeset .tabbed-labels::before {
+    background: var(--fc-base-main);
+}
+.md-typeset .tabbed-set .tabbed-labels code {
+    background: none;
+}
+.md-typeset .tabbed-labels>label>[href]:first-child { color: var(--md-typeset-color-white); }
+
+.md-typeset .highlighttable .linenodiv .normal a {
+    border: none;
+}
+
+@media screen and (max-width: 44.9844em) {
+    .md-content__inner>.tabbed-set .tabbed-labels {
+        max-width: auto;
+        margin: 0 0; 
+        scroll-padding-inline-start: 0.8rem;
+    }
+}
+
+
+.md-clipboard { color: var(--md-code-fg-color);}
+.md-clipboard::after {
+    height: 18px;
+    width: 18px;
+}
+
+/* Remove spacing if tabbed codeblock is inside a list */
+.md-steps .tabbed-set {
+    margin-bottom: 0;
+}
+.tabbed-set + .highlight pre{
+    margin: 0;
+}
+
+/* remove top border radius on tabbed codebody within list */
+.md-steps .highlight .md-code__content {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+/* || ------ ADMONITIONS ------ */
+
+.md-typeset .admonition-title {
+    margin: -20px -.6rem .6rem -.6rem;
+    border-top-right-radius: var(--br-04) !important;
+}
+
+.md-typeset .admonition, .md-typeset details {
+    border:none;
+    border-left:4px solid currentColor;
+    position: relative;
+    box-shadow: var(--md-shadow-z2);
+}
+
+/* Dark title background for dark mode */
+[data-md-color-scheme="slate"] .md-typeset .admonition-title, [data-md-color-scheme="slate"] .md-typeset details summary {
+    background: hsl(228, 10%, 6%) !important;
+}
+
+.md-typeset .admonition:has(.admonition-title) { padding-top: 20px;}
+/*.md-typeset .admonition-title:has(+ h2) { margin:-20px -12px 0;} -- Previous sibling  */
+
+/* Change margins if headings are first in admonition */
+.md-typeset .admonition > h2:first-of-type { margin:0;}
+.md-typeset .admonition h2:not(:first-of-type) {margin:12px 0}
+.md-typeset .admonition > h3:first-of-type { margin: 0;}
+.md-typeset .admonition > h4:first-of-type { margin:0;}
+
+
+/* || ------ FOOTNOTES ------ */
+
+.md-typeset .footnote-ref {
+    border-bottom: none;
+    color: var(--md-accent-fg-color);
+    font-size: var(--md-300);
+    outline: none !important;
+}
+.md-typeset .footnote ol li {
+    margin:0;
+}
+.md-typeset .footnote-backref {
+    height:.8rem;
+    width:.8rem;
+    border-bottom: none;
+}
+.md-typeset .footnote-backref:hover {border-bottom: none;}
+
+
+/* || ------ TABLE ------ */
+
+/* Table top title */
+thead th, .highlight span.filename{
+    color: var(--base-white);
+    background-color: var(--md-table-top-color);
+    border-bottom:1px solid var(--md-accent-fg-color);
+}
+
+.md-typeset table:not([class]) tr {
+    border-top: .05rem solid var(--md-border-color);
+}
+
+.md-typeset table:not([class]) tr:first-child {
+    border: none;
+}
+
+.md-typeset table:not([class]) {
+    border: none;
+    font-size: var(--md-300);
+    box-shadow: var(--md-shadow-z2);
+    border-radius: var(--md-border-radius);
+}
+
+/* || ------ LISTS ------ */
+.md-typeset ol li::marker {
+    color: var(--md-accent-fg-color);
+    font-size: var(--md-300);
+}
+
+/* || ------ BUTTONS ------ */
+
+/* Outlined button */
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+    color: var(--base-white);
+}
