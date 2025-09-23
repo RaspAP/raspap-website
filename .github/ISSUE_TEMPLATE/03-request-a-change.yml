@@ -1,0 +1,65 @@
+name: Request a change
+description: Want to submit an idea? Propose a change or feature request
+body:
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: >-
+        This field is optional. You may provide additional context for the idea
+        you want to propose, helping us to understand what you are working on
+        and what you are trying to achieve. If the context is not relevant, you
+        can leave this field empty.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        Please provide a detailed description of your idea in 2-3 sentences so
+        that we maintainers can fully understand what change, feature, or the
+        improvement you are proposing. Don't yet explain the benefits of your
+        idea, we'll come to that. Focus on functionality.
+    validations:
+      required: true
+
+  - type: textarea
+    id: related-links
+    attributes:
+      label: Related links
+      description: >-
+        Please list all links to open and closed [issues](https://pellcorp.github.io/creality-wiki/issues),
+        [discussions](https://github.com/pellcorp/creality-wiki/discussions),
+        or to [documentation sections](https://squidfunk.github.io/mkdocs-material/)
+        that are relevant to your idea. If you discussed your idea with the
+        community on our [discussion board](https://github.com/pellcorp/creality-wiki/discussions)
+        prior to creating this change request, please link the discussion here as well.
+      value: |-
+        - [Requesting a change](https://pellcorp.github.io/creality-wiki/)
+        -
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Use Cases
+      description: >-
+        Please explain how your idea will work from an author's and user's
+        perspective. Elaborate on how the change would positively impact not only
+        you but our community and how it aligns with the goals of the project.
+    validations:
+      required: true
+
+  - type: textarea
+    id: visuals
+    attributes:
+      label: Visuals
+      description: >-
+        This field is optional. You may provide sketches, screenshots, mockups,
+        or external assets to illustrate your idea. If you have seen this change,
+        feature, or improvement used in other static site generators or themes,
+        please describe how it is implemented and advertised.
+      placeholder: |-
+        Drag and drop images here or link external assets.
