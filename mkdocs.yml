@@ -70,12 +70,6 @@ theme:
 extra_css:
   - assets/stylesheets/extra.css
 
-extra:
-  og_image: https://raspap.com/assets/images/og-image.jpg
-  analytics:
-      provider: google
-      property: G-61X75VBL8Q
-
 # Plugins
 plugins:
   - blog:
@@ -90,20 +84,13 @@ plugins:
   - tags
   - open-in-new-tab
 
-  # INSIDERS=1 mkdocs build
-  - group:
-      enabled: !ENV INSIDERS
-      plugins:
-        - optimize
-        - social
-        - typeset
-
 extra:
   status:
     <identifier>: <description>
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property: G-61X75VBL8Q
+  og_image: https://raspap.com/assets/images/og-image.jpg
   #generator: false
   social:
     - icon: simple/github
