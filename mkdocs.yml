@@ -59,8 +59,8 @@ theme:
     - navigation.expand
     - navigation.prune
     - navigation.footer
-    - navigation.instant: false
-    - navigation.instant.progress: false
+    #- navigation.instant
+    #- navigation.instant.progress
     - navigation.tracking
     - search.highlight
     - search.share
@@ -85,8 +85,6 @@ plugins:
   - open-in-new-tab
 
 extra:
-  status:
-    <identifier>: <description>
   analytics:
     provider: google
     property: G-61X75VBL8Q
