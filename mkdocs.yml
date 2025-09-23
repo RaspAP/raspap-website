@@ -59,8 +59,8 @@ theme:
     - navigation.expand
     - navigation.prune
     - navigation.footer
-    #- navigation.instant
-    #- navigation.instant.progress
+    - navigation.instant: false
+    - navigation.instant.progress: false
     - navigation.tracking
     - search.highlight
     - search.share
@@ -69,6 +69,9 @@ theme:
 
 extra_css:
   - assets/stylesheets/extra.css
+
+extra:
+  og_image: https://raspap.com/assets/images/og-image.jpg
 
 # Plugins
 plugins:
