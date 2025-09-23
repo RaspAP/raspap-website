@@ -72,6 +72,9 @@ extra_css:
 
 extra:
   og_image: https://raspap.com/assets/images/og-image.jpg
+  analytics:
+      provider: google
+      property: G-61X75VBL8Q
 
 # Plugins
 plugins:
