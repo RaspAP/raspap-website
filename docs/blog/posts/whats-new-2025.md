@@ -50,9 +50,9 @@ Here's a rundown of the newest features you can start using straight away:
 - [802.11w Protected Management Frames](https://docs.raspap.com/features-core/ap-basics/#80211w)
 - [Printable Wi-Fi signs](https://docs.raspap.com/features-core/ap-basics/#printable-signs)
 - [Network diagnostics](https://docs.raspap.com/features-insiders/net-devices/#diagnostics)
-- [Dynamic DNS](https://docs.raspap.com/features-insiders/dynamicdns/)
+- [Dynamic DNS](https://docs.raspap.com/features-core/dynamicdns/)
 - [WireGuard kill switch](https://docs.raspap.com/features-core/wireguard/#kill-switch)
-- [NTP Service](https://docs.raspap.com/features-insiders/ntp/)
+- [NTP Service](https://docs.raspap.com/features-core/ntp/)
 
 ## New contributors
 Thank you and welcome to our newest contributors, we are grateful for their contributions over the last several releases: 
