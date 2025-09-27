@@ -19,7 +19,7 @@ Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a h
 
 After downloading your desired image, use a utility such as the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [balenaEtcher](https://www.balena.io/etcher) to flash the OS image onto a microSD card. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the [Initial Settings](#initial-settings) on how to connect. 
 
-## Quick Installer
+## Quick installer
 Alternatively, begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.
 
 Update your OS to its latest version, including the kernel and firmware, followed by a reboot:
@@ -53,21 +53,23 @@ It is strongly recommended that you change these default credentials in RaspAP's
 
 Your AP's <a href="https://docs.raspap.com/features-core/ap-basics/">basic settings</a> and many <a href="https://docs.raspap.com/features-core/ap-basics/#advanced-options">advanced options</a> may now be modified by RaspAP.
 
-## Supported Distributions
+## Supported distributions
 <a name="distros"></a>
 RaspAP was originally made for Raspberry Pi OS, but now also installs on the following Debian-based distros:
 
 | Distribution | Release | Architecture | Support | 
 | ------------ | ------- | ------------ | ------- |
-| Raspberry Pi OS | (64-bit) Lite Bookworm | ARM | Official | 
-| Raspberry Pi OS | (32-bit) Lite Bookworm | ARM | Official | 
-| Raspberry Pi OS | (64-bit) Desktop Bookworm | ARM | Official | 
-| Raspberry Pi OS | (64-bit) Lite Bullseye | ARM | Official | 
-| Raspberry Pi OS | (32-bit) Lite Bullseye | ARM | Official | 
-| Armbian  | 23.11 (Jammy)  | ARM  | Beta  |
-| Debian | Bookworm | ARM / x86_64 | Beta |
+| Raspberry Pi OS | 64-bit Debian 13 (trixie) Lite | ARM | Official | 
+| Raspberry Pi OS | 32-bit Debian 13 (trixie) Lite | ARM | Official | 
+| Raspberry Pi OS | 64-bit Debian 12 (bookworm) Lite | ARM | Official | 
+| Raspberry Pi OS | 32-bit Debian 12 (bookworm) Lite | ARM | Official | 
+| Raspberry Pi OS | 64-bit Debian 12 (bookworm) Desktop | ARM | Official | 
+| Raspberry Pi OS | 64-bit Debian 11 (bullseye) Lite | ARM | Official | 
+| Raspberry Pi OS | 32-bit Debian 11 (bullseye) Lite | ARM | Official | 
+| Armbian  | 23.11 (jammy)  | ARM  | Beta  |
+| Debian | 12 (bookworm) | ARM / x86_64 | Beta |
 
-<img src="/assets/images/supported-distros.png" style="max-width: 50%;" alt="Supported distributions">
+<img src="/assets/images/supported-distros.png" style="max-width: 60%;" alt="Supported distributions">
 
 You are also encouraged to try RaspAP's community-led <a href="https://github.com/RaspAP/raspap-docker">Docker container</a>.
 
