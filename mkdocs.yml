@@ -8,7 +8,7 @@ site_description: >-
 # Repository
 repo_name: RaspAP/raspap-website
 repo_url: https://github.com/RaspAP/raspap-website
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
 
 copyright: Copyright &copy; 2025 - All rights reserved
 
@@ -143,6 +143,8 @@ nav:
     - quick-start.md
   - Blog:
     - blog/index.md
+  - Docs:
+    - https://docs.raspap.com
   - Status:
     - https://stats.uptimerobot.com/TDu7wXbKue
 watch:
