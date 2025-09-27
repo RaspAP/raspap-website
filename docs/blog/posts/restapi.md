@@ -1,7 +1,7 @@
 ---
 date: 2024-03-13
-title: RESTful API Challenge
-linkTitle: RESTful API Challenge
+title: RESTful API challenge
+linkTitle: RESTful API challenge
 author: ([Bill Z](https://github.com/billz))
 resources:
   - src: "**.{png,jpg}"
@@ -35,3 +35,6 @@ The rules are straightforward:
 
 ## Getting started
 Our [docs](https://docs.raspap.com/restapi/) have everything you need to get started. The RESTful API Challenge runs for 30 days, ending April 14th, 2024. Winners will be announced via this blog, [GitHub discussions](https://github.com/RaspAP/raspap-webgui/discussions), [Reddit](https://reddit.com/r/RaspAP), [Discord](https://discord.gg/KVAsaAR) and [X](https://x.com/rasp_ap).
+
+## Discussions
+ Questions or comments the API challenge? Join the [discussion here](https://github.com/RaspAP/raspap-webgui/discussions/).

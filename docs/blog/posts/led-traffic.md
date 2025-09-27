@@ -302,8 +302,7 @@ With the implementation done, all that’s needed now is some network traffic. F
 
 My overall impression of the new, dynamic network traffic LED is that it closely resembles its hardware counterpart. A 100ms interval (10 Hz) is actually on the low end of what’s considered “visibly responsive.” Despite this, I find it to be a surprisingly accurate and useful indicator.
 
-This was created as a proof-of-concept. Does it belong in a future release of RaspAP? How would you improve on the implementation? Let me know in the comments below.
-
-Thanks for reading!
-
 **Update:** if you’d like to implement this in your own project, the source code is [available here](https://github.com/RaspAP/raspap-webgui/pull/1828).
+
+## Discussions
+ Questions or comments about this implementation? How would you improve on it? Join the [discussion here](https://github.com/RaspAP/raspap-webgui/discussions/).

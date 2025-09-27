@@ -73,3 +73,6 @@ All currently planned milestones and goals can be found on our [GitHub project b
 One item that's high on our list is [supporting Debian Trixie](https://github.com/RaspAP/raspap-webgui/issues/1930). Users are encouraged to connect with us if they'd like to help test RaspAP with the latest Debian distribution.
 
 It is worth noting that (most) new features land in [Insiders](https://docs.raspap.com/features-insiders) first, which you are encouraged to join, for as little as $10 USD per month.
+
+## Discussions
+ Questions or comments? Join the [discussion here](https://github.com/RaspAP/raspap-webgui/discussions/).
