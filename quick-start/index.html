@@ -251,6 +251,28 @@
     
     
       <li class="md-tabs__item">
+        <a href="https://docs.raspap.com" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
         <a href="https://stats.uptimerobot.com/TDu7wXbKue" class="md-tabs__link">
           
   
@@ -567,7 +589,7 @@
         <li class="md-nav__item">
   <a href="#quick-installer" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick Installer
+      Quick installer
     </span>
   </a>
   
@@ -585,7 +607,7 @@
         <li class="md-nav__item">
   <a href="#supported-distributions" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Distributions
+      Supported distributions
     </span>
   </a>
   
@@ -703,6 +725,58 @@
   
   
   
+    <a href="https://docs.raspap.com" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Docs
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
     <a href="https://stats.uptimerobot.com/TDu7wXbKue" class="md-nav__link">
       
   
@@ -764,7 +838,7 @@
         <li class="md-nav__item">
   <a href="#quick-installer" class="md-nav__link">
     <span class="md-ellipsis">
-      Quick Installer
+      Quick installer
     </span>
   </a>
   
@@ -782,7 +856,7 @@
         <li class="md-nav__item">
   <a href="#supported-distributions" class="md-nav__link">
     <span class="md-ellipsis">
-      Supported Distributions
+      Supported distributions
     </span>
   </a>
   
@@ -812,7 +886,7 @@
                   
 
   
-    <a href="https://github.com/RaspAP/raspap-website/edit/main/docs/quick-start.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/RaspAP/raspap-website/edit/master/docs/quick-start.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -858,7 +932,7 @@
 </tbody>
 </table>
 <p>After downloading your desired image, use a utility such as the <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a> or <a href="https://www.balena.io/etcher">balenaEtcher</a> to flash the OS image onto a microSD card. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the <a href="#initial-settings">Initial Settings</a> on how to connect. </p>
-<h2 id="quick-installer">Quick Installer<a class="headerlink" href="#quick-installer" title="Permanent link">&para;</a></h2>
+<h2 id="quick-installer">Quick installer<a class="headerlink" href="#quick-installer" title="Permanent link">&para;</a></h2>
 <p>Alternatively, begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.</p>
 <p>Update your OS to its latest version, including the kernel and firmware, followed by a reboot:
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get update
@@ -884,7 +958,7 @@ Invoke RaspAP's Quick Installer:
 </ul>
 <p>It is strongly recommended that you change these default credentials in RaspAP's Authentication and Hotspot &gt; Security panels.</p>
 <p>Your AP's <a href="https://docs.raspap.com/features-core/ap-basics/">basic settings</a> and many <a href="https://docs.raspap.com/features-core/ap-basics/#advanced-options">advanced options</a> may now be modified by RaspAP.</p>
-<h2 id="supported-distributions">Supported Distributions<a class="headerlink" href="#supported-distributions" title="Permanent link">&para;</a></h2>
+<h2 id="supported-distributions">Supported distributions<a class="headerlink" href="#supported-distributions" title="Permanent link">&para;</a></h2>
 <p><a name="distros"></a>
 RaspAP was originally made for Raspberry Pi OS, but now also installs on the following Debian-based distros:</p>
 <table>
@@ -899,49 +973,61 @@ RaspAP was originally made for Raspberry Pi OS, but now also installs on the fol
 <tbody>
 <tr>
 <td>Raspberry Pi OS</td>
-<td>(64-bit) Lite Bookworm</td>
+<td>64-bit Debian 13 (trixie) Lite</td>
 <td>ARM</td>
 <td>Official</td>
 </tr>
 <tr>
 <td>Raspberry Pi OS</td>
-<td>(32-bit) Lite Bookworm</td>
+<td>32-bit Debian 13 (trixie) Lite</td>
 <td>ARM</td>
 <td>Official</td>
 </tr>
 <tr>
 <td>Raspberry Pi OS</td>
-<td>(64-bit) Desktop Bookworm</td>
+<td>64-bit Debian 12 (bookworm) Lite</td>
 <td>ARM</td>
 <td>Official</td>
 </tr>
 <tr>
 <td>Raspberry Pi OS</td>
-<td>(64-bit) Lite Bullseye</td>
+<td>32-bit Debian 12 (bookworm) Lite</td>
 <td>ARM</td>
 <td>Official</td>
 </tr>
 <tr>
 <td>Raspberry Pi OS</td>
-<td>(32-bit) Lite Bullseye</td>
+<td>64-bit Debian 12 (bookworm) Desktop</td>
+<td>ARM</td>
+<td>Official</td>
+</tr>
+<tr>
+<td>Raspberry Pi OS</td>
+<td>64-bit Debian 11 (bullseye) Lite</td>
+<td>ARM</td>
+<td>Official</td>
+</tr>
+<tr>
+<td>Raspberry Pi OS</td>
+<td>32-bit Debian 11 (bullseye) Lite</td>
 <td>ARM</td>
 <td>Official</td>
 </tr>
 <tr>
 <td>Armbian</td>
-<td>23.11 (Jammy)</td>
+<td>23.11 (jammy)</td>
 <td>ARM</td>
 <td>Beta</td>
 </tr>
 <tr>
 <td>Debian</td>
-<td>Bookworm</td>
+<td>12 (bookworm)</td>
 <td>ARM / x86_64</td>
 <td>Beta</td>
 </tr>
 </tbody>
 </table>
-<p><img src="/assets/images/supported-distros.png" style="max-width: 50%;" alt="Supported distributions"></p>
+<p><img src="/assets/images/supported-distros.png" style="max-width: 60%;" alt="Supported distributions"></p>
 <p>You are also encouraged to try RaspAP's community-led <a href="https://github.com/RaspAP/raspap-docker">Docker container</a>.</p>
 <h2 id="documentation-and-more">Documentation and more<a class="headerlink" href="#documentation-and-more" title="Permanent link">&para;</a></h2>
 <p>Our <a href="https://docs.raspap.com/faq/">frequently asked questions (FAQ)</a> are continuously updated and are a great place to start. Need help not covered in the FAQ, have an idea, or want to share your project with the RaspAP community? Head over to our <a href="https://github.com/RaspAP/raspap-webgui/discussions">GitHub Discussions</a>. For everything else and more detailed information, dive into our official <a href="https://docs.raspap.com">documentation</a>.</p>
