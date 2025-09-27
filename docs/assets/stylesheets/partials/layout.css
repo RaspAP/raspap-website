@@ -250,12 +250,11 @@ label.md-nav__link + nav label.md-nav__link {
 /* Style nested li's (these get triggered by H3 etc) */
 .md-nav--secondary li li {
     margin: 0;
-    padding-left: 14px;
+    padding-left: 0.2rem;
     position: relative;
 }
 
 .md-nav--secondary li li a::before {
-    content: '-';
     position: absolute;
     left: 5px;
     top: 50%;
