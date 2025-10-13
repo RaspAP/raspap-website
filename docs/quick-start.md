@@ -14,8 +14,8 @@ Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a h
 
 | Distribution | Debian version | Kernel version | RaspAP version | Size |
 | ------------ | -------------- | -------------- | -------------- | ---- |
-| Raspberry Pi OS (64-bit) Lite | 12 (bookworm) | 6.6 | Latest | 869 MB |
-| Raspberry Pi OS (32-bit) Lite | 12 (bookworm) | 6.6 | Latest | 897 MB |
+| Raspberry Pi OS (64-bit) Lite | 13 (trixie) | 6.12 | Latest | 826 MB |
+| Raspberry Pi OS (32-bit) Lite | 13 (trixie) | 6.12 | Latest | 799 MB |
 
 After downloading your desired image, use a utility such as the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [balenaEtcher](https://www.balena.io/etcher) to flash the OS image onto a microSD card. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the [Initial Settings](#initial-settings) on how to connect. 
 
@@ -59,13 +59,13 @@ RaspAP was originally made for Raspberry Pi OS, but now also installs on the fol
 
 | Distribution | Release | Architecture | Support | 
 | ------------ | ------- | ------------ | ------- |
-| Raspberry Pi OS | 64-bit Debian 13 (trixie) Lite | ARM | Official | 
-| Raspberry Pi OS | 32-bit Debian 13 (trixie) Lite | ARM | Official | 
-| Raspberry Pi OS | 64-bit Debian 12 (bookworm) Lite | ARM | Official | 
-| Raspberry Pi OS | 32-bit Debian 12 (bookworm) Lite | ARM | Official | 
-| Raspberry Pi OS | 64-bit Debian 12 (bookworm) Desktop | ARM | Official | 
-| Raspberry Pi OS | 64-bit Debian 11 (bullseye) Lite | ARM | Official | 
-| Raspberry Pi OS | 32-bit Debian 11 (bullseye) Lite | ARM | Official | 
+| Raspberry Pi OS Lite | 64-bit Debian 13 (trixie) | ARM | Official | 
+| Raspberry Pi OS Lite | 32-bit Debian 13 (trixie) | ARM | Official | 
+| Raspberry Pi OS Lite | 64-bit Debian 12 (bookworm) | ARM | Official | 
+| Raspberry Pi OS Lite | 32-bit Debian 12 (bookworm) | ARM | Official | 
+| Raspberry Pi OS Desktop | 64-bit Debian 12 (bookworm) | ARM | Official | 
+| Raspberry Pi OS Lite | 64-bit Debian 11 (bullseye) | ARM | Official | 
+| Raspberry Pi OS Lite | 32-bit Debian 11 (bullseye) | ARM | Official | 
 | Armbian  | 23.11 (jammy)  | ARM  | Beta  |
 | Debian | 12 (bookworm) | ARM / x86_64 | Beta |
 
