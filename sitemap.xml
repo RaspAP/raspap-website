@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://raspap.com/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/quick-start/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/debian-13-trixie-support-is-here/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/building-a-realtime-network-traffic-led-indicator/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
+    </url>
+    <url>
+         <loc>https://raspap.com/blog/new-multilingual-support/</loc>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/restful-api-challenge/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/whats-new-in-2025/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/archive/2025/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
     <url>
          <loc>https://raspap.com/blog/archive/2024/</loc>
-         <lastmod>2025-10-13</lastmod>
+         <lastmod>2025-10-26</lastmod>
     </url>
 </urlset>

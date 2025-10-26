@@ -12,13 +12,11 @@
         <meta name="author" content="RaspAP Community">
       
       
-        <link rel="canonical" href="https://raspap.com/blog/debian-13-trixie-support-is-here/">
+        <link rel="canonical" href="https://raspap.com/blog/new-multilingual-support/">
       
       
-        <link rel="prev" href="../whats-new-in-2025/">
+        <link rel="prev" href="../debian-13-trixie-support-is-here/">
       
-      
-        <link rel="next" href="../new-multilingual-support/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -26,7 +24,7 @@
     
     
       
-        <title>Debian 13 "trixie" support is here - The Debian wireless router</title>
+        <title>New multilingual support - The Debian wireless router</title>
       
     
     
@@ -91,8 +89,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://raspap.com/blog/debian-13-trixie-support-is-here/">
-  <meta property="og:title" content="Debian 13 "trixie" support is here - The Debian wireless router">
+  <meta property="og:url" content="https://raspap.com/blog/new-multilingual-support/">
+  <meta property="og:title" content="New multilingual support - The Debian wireless router">
   <meta property="og:description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
   <meta property="og:site_name" content="The Debian wireless router">
   
@@ -101,8 +99,8 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://raspap.com/blog/debian-13-trixie-support-is-here/">
-  <meta property="twitter:title" content="Debian 13 "trixie" support is here - The Debian wireless router">
+  <meta property="twitter:url" content="https://raspap.com/blog/new-multilingual-support/">
+  <meta property="twitter:title" content="New multilingual support - The Debian wireless router">
   <meta property="twitter:description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
   
   <meta property="twitter:image" content="https://raspap.com/assets/images/og-image.jpg">
@@ -128,7 +126,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#upgrading-from-bookworm" class="md-skip">
+        <a href="#new-locale-support" class="md-skip">
           Skip to content
         </a>
       
@@ -842,44 +840,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#upgrading-from-bookworm" class="md-nav__link">
+  <a href="#new-locale-support" class="md-nav__link">
     <span class="md-ellipsis">
-      Upgrading from bookworm
+      New locale support
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-raspap" class="md-nav__link">
+  <a href="#locales-baked-in" class="md-nav__link">
     <span class="md-ellipsis">
-      Installing RaspAP
+      Locales baked in
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-changed" class="md-nav__link">
+  <a href="#what-this-means" class="md-nav__link">
     <span class="md-ellipsis">
-      What's changed?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What&#39;s changed?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#switching-to-php-fpm" class="md-nav__link">
-    <span class="md-ellipsis">
-      Switching to php-fpm
+      What this means
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-involved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting involved
+    </span>
+  </a>
   
 </li>
       
@@ -948,7 +949,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-09-27 00:00:00+00:00" class="md-ellipsis">September 27, 2025</time>
+                        <time datetime="2025-10-26 00:00:00+00:00" class="md-ellipsis">October 26, 2025</time>
                       </div>
                     </li>
                     
@@ -960,7 +961,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              4 min read
+                              3 min read
                             
                           </span>
                         </div>
@@ -981,7 +982,7 @@
         
 
   
-    <a href="https://github.com/RaspAP/raspap-website/edit/master/docs/blog/posts/debian-13-trixie.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/RaspAP/raspap-website/edit/master/docs/blog/posts/locales.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -989,73 +990,40 @@
   
 
 
-  <h1>Debian 13 "trixie" support is here</h1>
+  <h1>New multilingual support</h1>
 
 
-<p><img src="/blog/assets/images/debian-13-trixie.png" width="600px"><br/></p>
-<p>Debian 13 "trixie" was released on August 9th of this year, marking the latest stable release of the universal operating system that forms the foundation for countless Linux distributions. This release brings <a href="https://www.debian.org/releases/trixie/release-notes/whats-new.en.html">many significant updates</a>, including the Linux 6.12 LTS kernel.</p>
+<p><img src="/blog/assets/images/jason-leung-mZNRsYE9Qi4-unsplash.jpg" width="600px"><br/>
+<sub><em>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/photos/white-neon-light-signage-on-wall-mZNRsYE9Qi4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></em></sub></p>
+<p>We're glad to announce the release of <a href="https://github.com/RaspAP/raspap-webgui/releases/tag/3.4.6">RaspAP 3.4.6</a> and Insiders 3.5.3, which bring comprehensive localization updates across five of our community's most popular languages. This release represents a significant milestone in making RaspAP accessible to users worldwide, with fully translated interfaces that now load automatically based on your browser's language preferences.</p>
 <!-- more -->
 
-<p>For Raspberry Pi users, Debian 13's release is particularly relevant as Raspberry Pi OS is built on Debian. Early adopters have already begun testing the next version of Raspberry Pi OS trixie. With RaspAP now supporting Debian 13, users can take advantage of the latest system improvements and security enhancements for their wireless routers.</p>
-<p>If you'd like to join these early adopters, this post has step-by-step instructions for upgrading your OS.</p>
-<h2 id="upgrading-from-bookworm">Upgrading from bookworm<a class="headerlink" href="#upgrading-from-bookworm" title="Permanent link">&para;</a></h2>
-<p>You can upgrade an existing bookworm (Lite) image to trixie by following the steps provided below, which were adapted from OS architect Simon Long's <a href="https://forums.raspberrypi.com/viewtopic.php?t=389477">post</a>. Debian's <a href="https://www.debian.org/releases/trixie/release-notes/upgrading.en.html">official guidance</a> on upgrading from bookworm is also worth a read before diving in.</p>
-<div class="admonition warning">
-<p class="admonition-title">Important</p>
-<p>The recommended and best approach will <em>always</em> be to start with a clean trixie image and then install RaspAP, plus any other programs. You shouldn't attempt to upgrade any system that you rely on, and it's strongly advised to make a full backup before performing an upgrade. Bear in mind that, while this upgrade process has been tested repeatedly, it may still result in a broken image.</p>
-</div>
-<ol>
-<li>Start with a clean bookworm (Lite) image and update your system's package list, then upgrade the kernel, firmware and installed packages to their latest versions:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt update
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt full-upgrade
-</span></code></pre></div></li>
-<li>Update the <code>apt</code> configuration for trixie by editing <code>/etc/apt/sources.list</code>. Change every reference to "bookworm" with "trixie". Do the same with <code>/etc/apt/sources.list.d/raspi.list</code>.</li>
-<li>Run an <code>apt</code> update with the new package lists:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo apt update
-</span></code></pre></div></li>
-<li>Upgrade to trixie by executing the following:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo apt full-upgrade -y -o Dpkg::Options::=&quot;--force-confdef&quot; -o Dpkg::Options::=&quot;--force-confnew&quot; --purge --auto-remove
-</span></code></pre></div>
-On a newer Pi model with a fast connection, the trixie upgrade takes about 10 minutes to complete. While it's running, you'll be asked to decide whether to restart services — answer "yes" to this prompt.</li>
-<li>Finally, reboot your system:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo reboot
-</span></code></pre></div></li>
-</ol>
-<p>With the upgrade complete, reconnect to your device and confirm the new OS version by executing the following:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>lsb_release -a
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Distributor ID: Debian
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Description:    Debian GNU/Linux 13 (trixie)
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Release:    13
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>Codename:   trixie
-</span></code></pre></div></p>
-<p>You can now proceed with installing the latest release of RaspAP.</p>
-<h2 id="installing-raspap">Installing RaspAP<a class="headerlink" href="#installing-raspap" title="Permanent link">&para;</a></h2>
-<p>For Debian 13 early adopters, RaspAP is available to install via the <a href="https://docs.raspap.com/quick">Quick installer</a>. Simply invoke the installer as you would normally:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl -sL https://install.raspap.com | bash
-</span></code></pre></div>
-The <a href="http://github.com/RaspAP/raspap-webgui/releases/tag/3.4.3">version 3.4.3 release</a> includes updates to the installer and RaspAP's core with support for trixie. These updates are backwards compatible with bookworm and bullseye, so you can continue using these distributions with RaspAP.</p>
-<p>Custom OS images, Docker containers and torrent files will be available after the official release of Raspberry Pi OS 64- and 32-bit (Lite) trixie.</p>
-<h2 id="whats-changed">What's changed?<a class="headerlink" href="#whats-changed" title="Permanent link">&para;</a></h2>
-<p>The biggest change in RaspAP under trixie is the move from <code>php-cgi</code> to <code>php-fpm</code> as the default PHP handler.</p>
-<p>In Debian 13 with PHP 8.4, the <code>php-cgi</code> runtime, when used with web servers like lighttpd, applies stricter permission limits by default, which affects certain applications. Notably, this prevents RaspAP from interacting with system tools such as <code>iw</code>, <code>ip</code>, or <code>wpa_cli</code> — all of which are needed to fetch details about the Linux networking environment. This results in errors like the following:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>The &quot;no new privileges&quot; flag is set, which prevents sudo from running as root.
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Cannot open netlink socket: Address family not supported by protocol.
-</span></code></pre></div>
-<p>Even if sudo allows a given command for a specific user (usually, <code>www-data</code> under lighttpd), the <code>php-cgi</code> process doesn’t have the capabilities to execute it. </p>
-<p>For optimal compatibility and performance, RaspAP has moved to <code>php-fpm</code> (the FastCGI Process Manager) in place of <code>php-cgi</code>. Debian's own PHP packaging strongly emphasizes <code>php-fpm</code> as the preferred runtime for most use cases due to its superior performance, security, and configurability.</p>
-<h3 id="switching-to-php-fpm">Switching to php-fpm<a class="headerlink" href="#switching-to-php-fpm" title="Permanent link">&para;</a></h3>
-<p>RaspAP's installer handles this process for you automatically. 
-If you previously ran <code>php-cgi</code> under lighttpd, you can switch to <code>php-fpm</code> by following these manual steps:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo apt udpate
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>sudo apt install php8.4-fpm
-</span></code></pre></div>
-<p>Next, enable its systemd service and update the web server configuration to use the FPM module:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo systemctl enable --now php8.4-fpm
-</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo lighty-enable-mod fastcgi-php-fpm
-</span></code></pre></div></p>
-<p>The latter instructs lighttpd to pass requests to the FPM socket (typically located at  <code>/run/php/php8.4-fpm.sock</code>).</p>
+<h2 id="new-locale-support">New locale support<a class="headerlink" href="#new-locale-support" title="Permanent link">&para;</a></h2>
+<p>This latest release includes complete locale updates for the following:</p>
+<ul>
+<li><strong>Italian (it_IT)</strong> - full Italian translation</li>
+<li><strong>Spanish (es_MX)</strong> - full Spanish localization</li>
+<li><strong>German (de_DE)</strong> - complete German translation</li>
+<li><strong>French (fr_FR)</strong> - full French localization</li>
+<li><strong>Chinese (zh_CN)</strong> - complete simplified Chinese translation</li>
+</ul>
+<p>Each of these languages now features 100% coverage of RaspAP's interface, from basic settings to advanced configuration options. Every menu item, button label, help text, and system message has been carefully translated to provide a native experience for speakers of these languages.</p>
+<h2 id="locales-baked-in">Locales baked in<a class="headerlink" href="#locales-baked-in" title="Permanent link">&para;</a></h2>
+<p>RaspAP's <a href="/quick-start">custom OS images</a>, built using our specialized <code>pi-gen</code> <a href="https://github.com/RaspAP/pi-gen">fork</a>, now include the <code>locales-all</code> package by default. This package provides comprehensive locale data for all supported languages, ensuring that character encoding, date formats, number formatting, and other regional conventions work correctly across the entire system.</p>
+<h2 id="what-this-means">What this means<a class="headerlink" href="#what-this-means" title="Permanent link">&para;</a></h2>
+<p>In the past, users were required to manually generate a locale on their system to enable translations. Now, with locales baked in to our custom images, RaspAP will automatically display your preferred language without any special configuration.</p>
+<p>This means that speakers of Spanish, French, German, Italian, Korean, and Chinese (simplified) will see RaspAP in their native language the moment they access the web interface. No trips to the system settings menu are required.</p>
+<h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<p>RaspAP reads your browser's language preference settings in the <code>HTTP_ACCEPT_LANGUAGE</code> header. If your browser language matches one of our supported locales, the interface loads in that language immediately.</p>
+<p><img src="/blog/assets/images/german-login.png" width="400px"><br/></p>
+<p>The system works out of the box on first boot. Behind the scenes, the application stores a "locale" cookie value to persist your preferred language across sessions.</p>
+<p>You can still configure a different locale in the <strong>System &gt; Language</strong> tab, as before.</p>
+<h2 id="getting-involved">Getting involved<a class="headerlink" href="#getting-involved" title="Permanent link">&para;</a></h2>
+<p>Our localization effort spans 24 languages and is managed centrally on <a href="https://crowdin.com/project/raspap">Crowdin</a>. Here you'll find our supported translations, recent activity, discussions and so on. You can get started by simply choosing the language you'd like to contribute to. Crowdin makes it easy to get involved as a translator, proofreader or QA specialist.</p>
+<p>We've integrated <a href="https://www.deepl.com/en/translator">DeepL</a> machine translations via their API, in addition to Crowdin's own predictive translations. This means you can get suggestions from one of the best available machine translators currently available.</p>
+<p>For more info, see Crowdin's <a href="https://support.crowdin.com/crowdin-intro/#translation-process">walkthrough</a> of the translation process.</p>
 <h2 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h2>
-<p>Questions or comments about Debian 13 and our move to PHP-FPM? Join the <a href="https://github.com/RaspAP/raspap-webgui/discussions/">discussion here</a>.</p>
+<p>Questions or comments about our multilingual support? Join the <a href="https://github.com/RaspAP/raspap-webgui/discussions/">discussion here</a>.</p>
 
 
 
@@ -1102,7 +1070,7 @@ If you previously ran <code>php-cgi</code> under lighttpd, you can switch to <co
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../whats-new-in-2025/" class="md-footer__link md-footer__link--prev" aria-label="Previous: What&#39;s new in 2025">
+          <a href="../debian-13-trixie-support-is-here/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Debian 13 &#34;trixie&#34; support is here">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1112,27 +1080,11 @@ If you previously ran <code>php-cgi</code> under lighttpd, you can switch to <co
                 Previous
               </span>
               <div class="md-ellipsis">
-                What's new in 2025
+                Debian 13 "trixie" support is here
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../new-multilingual-support/" class="md-footer__link md-footer__link--next" aria-label="Next: New multilingual support">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                New multilingual support
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
