@@ -9,7 +9,7 @@ The RaspAP Kit AX1800 adapter delivers dual-band WiFi-6 with blazing USB 3.0 spe
 
 No guesswork, no drivers to install or configuration changes required. Simply connect the included Ethernet cable, attach the adapter to a USB 3.0 port and insert the SD card. On first boot you get wireless performance that won't bottleneck your network.
 
-The 32GB microSD card comes preloaded with RaspAP's 64-bit firmware, running on the latest Debian 13 "trixie" OS, with instant access to:
+The 32GB microSD card comes preloaded with RaspAP's 64-bit firmware, running on the latest Debian 13 "trixie" OS. You get instant access to:
 
 - Network-wide ad blocking
 - VPN protection for every device
