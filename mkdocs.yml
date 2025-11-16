@@ -141,6 +141,8 @@ nav:
   - Home: index.md
   - Quick Start:
     - quick-start.md
+  - Kit:
+    - kit.md
   - Blog:
     - blog/index.md
   - Docs:
