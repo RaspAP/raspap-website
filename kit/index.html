@@ -12,26 +12,32 @@
         <meta name="author" content="RaspAP Community">
       
       
+        <link rel="canonical" href="https://raspap.com/kit/">
       
+      
+        <link rel="prev" href="../quick-start/">
+      
+      
+        <link rel="next" href="../blog/">
       
       
         
       
       
-      <link rel="icon" href="/assets/favicon.ico">
+      <link rel="icon" href="../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
     
     
       
-        <title>The Debian wireless router</title>
+        <title>RaspAP Kit - The Debian wireless router</title>
       
     
     
   
-      <link rel="stylesheet" href="/assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -43,12 +49,12 @@
 
 
     
-  <link rel="stylesheet" href="/assets/stylesheets/customs.css">
-  <link rel="stylesheet" href="/assets/stylesheets/partials/colors.css">
-  <link rel="stylesheet" href="/assets/stylesheets/partials/setup.css">
-  <link rel="stylesheet" href="/assets/stylesheets/partials/layout.css">
-  <link rel="stylesheet" href="/assets/stylesheets/partials/reference.css">
-  <link rel="stylesheet" href="/assets/stylesheets/partials/typeset.css">
+  <link rel="stylesheet" href="../assets/stylesheets/customs.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/colors.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/setup.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/layout.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/reference.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/typeset.css">
 
     
       
@@ -63,9 +69,9 @@
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -87,8 +93,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://raspap.com/">
-  <meta property="og:title" content="The Debian wireless router">
+  <meta property="og:url" content="https://raspap.com/kit/">
+  <meta property="og:title" content="RaspAP Kit - The Debian wireless router">
   <meta property="og:description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
   <meta property="og:site_name" content="The Debian wireless router">
   
@@ -97,8 +103,8 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://raspap.com/">
-  <meta property="twitter:title" content="The Debian wireless router">
+  <meta property="twitter:url" content="https://raspap.com/kit/">
+  <meta property="twitter:title" content="RaspAP Kit - The Debian wireless router">
   <meta property="twitter:description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
   
   <meta property="twitter:image" content="https://raspap.com/assets/images/og-image.jpg">
@@ -122,6 +128,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#a-powerful-router-in-seconds" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -175,7 +186,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -196,7 +207,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/quick-start/" class="md-tabs__link">
+        <a href="../quick-start/" class="md-tabs__link">
           
   
   
@@ -214,11 +225,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/kit/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -240,7 +253,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/blog/" class="md-tabs__link">
+        <a href="../blog/" class="md-tabs__link">
           
   
   
@@ -423,7 +436,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -434,9 +449,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="The Debian wireless router" class="md-nav__button md-logo" aria-label="The Debian wireless router" data-md-component="logo">
+    <a href=".." title="The Debian wireless router" class="md-nav__button md-logo" aria-label="The Debian wireless router" data-md-component="logo">
       
-  <img src="/assets/logo.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     The Debian wireless router
@@ -463,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -514,7 +529,7 @@
   
   
   
-    <a href="/quick-start/" class="md-nav__link">
+    <a href="../quick-start/" class="md-nav__link">
       
   
   
@@ -544,6 +559,8 @@
       
   
   
+    
+  
   
   
     
@@ -555,24 +572,25 @@
     
     
       
+        
+        
+      
       
         
       
     
     
       
-        
-        
-      
     
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
-  
-  
-  
-    <a href="/kit/" class="md-nav__link">
-      
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
   
   
   <span class="md-ellipsis">
@@ -586,12 +604,222 @@
   
   
 
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kit
   
 
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspAP Kit
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RaspAP Kit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-powerful-router-in-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A powerful router in seconds
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware components
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factory-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factory reset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shipping-returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shipping &amp; returns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAQ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FAQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-else-do-i-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What else do I need?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-pi-model-should-i-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which Pi model should I use?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#will-other-devices-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Will other devices work?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-it-compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How does it compare?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-the-waiting-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join the waiting list
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discussions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -632,7 +860,7 @@
   
   
   
-    <a href="/blog/" class="md-nav__link">
+    <a href="../blog/" class="md-nav__link">
       
   
   
@@ -780,6 +1008,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -792,6 +1022,141 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-powerful-router-in-seconds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A powerful router in seconds
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware components
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factory-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Factory reset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shipping-returns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shipping &amp; returns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAQ
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FAQ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-else-do-i-need" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What else do I need?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#which-pi-model-should-i-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Which Pi model should I use?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#will-other-devices-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Will other devices work?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-it-compare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How does it compare?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-the-waiting-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Join the waiting list
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discussions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Discussions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -803,8 +1168,94 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+    <a href="https://github.com/RaspAP/raspap-website/edit/master/docs/kit.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>RaspAP Kit</h1>
+
+
+<h2 id="a-powerful-router-in-seconds">A powerful router in seconds<a class="headerlink" href="#a-powerful-router-in-seconds" title="Permanent link">&para;</a></h2>
+<p>The RaspAP Kit AX1800 adapter delivers dual-band WiFi-6 with blazing USB 3.0 speeds—up to 8-10x faster than the Raspberry Pi 4B's onboard wireless.</p>
+<p>No guesswork, no drivers to install or configuration changes required. Simply connect the included Ethernet cable, attach the adapter to a USB 3.0 port and insert the SD card. On first boot you get wireless performance that won't bottleneck your network.</p>
+<p>The 32GB microSD card comes preloaded with RaspAP's 64-bit firmware, running on the latest Debian 13 "trixie" OS, with instant access to:</p>
+<ul>
+<li>Network-wide ad blocking</li>
+<li>VPN protection for every device</li>
+<li>A suite of optional plugins</li>
+<li>Ample shared network storage</li>
+<li>Complete control over your wireless network</li>
+<li>A full Linux OS ready to customize</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Compatibility</p>
+<p>To make the most of the AX1800 adapter, the RaspAP Kit is compatible with Raspberry Pi 4B and 5 models with USB 3.0 ports.</p>
+</div>
+<h2 id="hardware-components">Hardware components<a class="headerlink" href="#hardware-components" title="Permanent link">&para;</a></h2>
+<p>The RaspAP Kit includes everything you need to transform your Pi 4B / 5 into a capable wireless router:</p>
+<ol>
+<li>AX1800 USB wireless adapter – dual-band, USB 3.0, full Linux support</li>
+<li>32GB microSD card – preloaded with 64-bit RaspAP firmware</li>
+<li>Gigabit Ethernet patch cable - optimal form factor for the Pi</li>
+</ol>
+<p>Simply insert the microSD card, connect to Ethernet, attach the AX1800 to a blue USB 3.0 port and power it on. That's it.</p>
+<h2 id="factory-reset">Factory reset<a class="headerlink" href="#factory-reset" title="Permanent link">&para;</a></h2>
+<p>RaspAP's firmware gives you advanced control over your wireless network. Tweaked one setting too many? No problem. Restore RaspAP to its factory defaults with a single click.</p>
+<h2 id="shipping-returns">Shipping &amp; returns<a class="headerlink" href="#shipping-returns" title="Permanent link">&para;</a></h2>
+<p>Free standard shipping is available with 30-day returns. Try it risk-free. </p>
+<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
+<h3 id="what-else-do-i-need">What else do I need?<a class="headerlink" href="#what-else-do-i-need" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A Raspberry Pi model 4B or 5</li>
+<li>An official power supply: 5V/3A for Pi 4, 27W for Pi 5</li>
+</ul>
+<h3 id="which-pi-model-should-i-use">Which Pi model should I use?<a class="headerlink" href="#which-pi-model-should-i-use" title="Permanent link">&para;</a></h3>
+<p>The Raspberry Pi model 4B (about $35) has a capable CPU and USB 3.0, which is perfect for this application. The Raspberry Pi 5 pushes speeds 2-3x faster and is also fully supported.</p>
+<h3 id="will-other-devices-work">Will other devices work?<a class="headerlink" href="#will-other-devices-work" title="Permanent link">&para;</a></h3>
+<p>Other Pi models will still work, but are limited to USB 2.0. The USB 2.0 standard is significantly slower and will create a bottleneck in your wireless router.</p>
+<h3 id="how-does-it-compare">How does it compare?<a class="headerlink" href="#how-does-it-compare" title="Permanent link">&para;</a></h3>
+<p>This depends on pricing and availability in your area, but consider that a 2GB Raspberry Pi 5 retails for around $50 USD / €55-65. The RaspAP Kit is projected to retail for around $37 USD / €32. The combined package gives you a complete, customizable Linux router with a more powerful CPU at roughly the same price as many commercial "travel" type routers.</p>
+<h2 id="join-the-waiting-list">Join the waiting list<a class="headerlink" href="#join-the-waiting-list" title="Permanent link">&para;</a></h2>
+<p>Be the first to know when the RaspAP Kit launches. Zero spam guarantee.</p>
+<form id="signup" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="ae6aed4d-aa2b-460d-ae86-123a15081769">
+  <label for="name">Name</label><br>
+  <input type="text" name="name" required>
+  <label for="email">Email</label><br>
+  <input type="email" name="email" required>
+  <button type="submit">Submit</button>
+</form>
+
+<p>You email will be used to inform you when the kit launches, nothing more.</p>
+<h2 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h2>
+<p>Questions about the RaspAP kit? Head over to our <a href="https://github.com/RaspAP/raspap-webgui/discussions">GitHub discussions</a> or join our <a href="https://discord.gg/KVAsaAR">Discord server</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+                
               </article>
             </div>
           
@@ -824,6 +1275,46 @@
       
         <footer class="md-footer">
   
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../quick-start/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick Start">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Quick Start
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../blog/" class="md-footer__link md-footer__link--next" aria-label="Next: Blog">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Blog
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -909,16 +1400,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.tooltips", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "/assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.tooltips", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   
-      <script src="/assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../js/open_in_new_tab.js"></script>
       
     
-  <!-- <script src="/assets/javascripts/custom.js"></script> -->
+  <!-- <script src="../assets/javascripts/custom.js"></script> -->
 
   </body>
 </html>
