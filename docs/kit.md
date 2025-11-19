@@ -60,7 +60,7 @@ Be the first to know when the RaspAP Kit launches. Zero spam guarantee.
   <input type="text" name="name" required>
   <label for="email">Email</label><br>
   <input type="email" name="email" required>
-  <button type="submit">Submit</button>
+  <button class="btn-submit" type="submit">Submit</button>
 </form>
 
 You email will be used to inform you when the kit launches, nothing more.

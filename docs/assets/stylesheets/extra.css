@@ -202,7 +202,7 @@ input, textarea {
   border: 1px solid var(--md-default-fg-color--lighter);
   border-radius: 0.25em;
 }
-button {
+.btn-submit {
   background: var(--md-accent-fg-color);
   color: #fff;
   padding: 0.75em 1.25em;
