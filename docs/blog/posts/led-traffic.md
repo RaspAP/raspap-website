@@ -18,11 +18,11 @@ The Ethernet standards (IEEE 802.3 and related) don’t define a standard for ac
 As visual cues, they’re useful indicators of a network’s normal function without requiring software or other tools.
 
 ## Transforming static software LEDs
-The open source [RaspAP wireless router project](https://github.com/RaspAP/raspap-webgui) uses software LEDs to indicate the operational status of many services, system resources and interfaces. Like hardware LEDs, they’re visual indicators designed to provide a quick, at-a-glance status of some part of the system.
+RaspAP uses software LEDs to indicate the operational status of many services, system resources and interfaces. Like hardware LEDs, they’re visual indicators designed to provide a quick, at-a-glance status of some part of the system.
 
 <img src="/blog/assets/images/lights-static.webp" width="400px"><br/>
 
-These software LEDs, while functional, are completely static. That is, they display a fixed green, amber or red color to indicate the status of some aspect of the system. What if, like the hardware LEDs, they could be transformed to indicate network traffic over a given interface?
+These software LEDs, while functional, are mostly static. That is, they display a fixed green, amber or red color to indicate the status of some aspect of the system. What if, like the hardware LEDs, they could be transformed to indicate network traffic over a given interface?
 
 ## Design goals
 Manufacturers implement hardware LEDs by connecting them to the router’s processor, which monitors network traffic and triggers the appropriate light patterns based on data flow through the device’s ports.
@@ -41,7 +41,7 @@ By necessity, the monitor will run as a background process that’s daemonized t
 On the front-end, the web application will be modified to poll values supplied by the daemon and update the LEDs in the UI accordingly. Heavy DOM manipulations are strictly avoided and a reasonable interval value will be used to transform the static LEDs into dynamic ones.
 
 ### Step 1: Monitor network activity
-Linux gives us several ways to achieve this. Either cat /proc/net/dev or ifconfig wlan0 could be used to get TX/RX byte counters for a given network interface. With the former, capturing byte counters for wlan0 is done like so:
+Linux gives us several ways to achieve this. Either `cat /proc/net/dev` or `ifconfig wlan0` could be used to get TX/RX byte counters for a given network interface. With the former, capturing byte counters for `wlan0` is done like so:
 
 ```bash
 $ cat /proc/net/dev | grep wlan0
@@ -53,9 +53,9 @@ wlan0: 86229952  404578    0    0    0     0          0      1524 893942159  826
 Reading from `/proc/net/dev` is extremely low-cost — it's just a file read. It can be safely polled **10–20 times per second** (every 50–100 ms) with **minimal system impact**, especially on a Raspberry Pi. This is comparable to how `top`, `htop`, or system monitors work.
 
 ### Step 2: Poll and calculate activity
-A small program is required to read the current TX/RX bytes from `/proc/net/dev` at a fixed interval (let’s say every 100ms), read the next value and calculate the difference. This is a persistent process written in compiled C that runs in the background. In the next step, I’ll create a unit file that uses this program as the basis for a systemd service.
+A small program is required to read the current TX/RX bytes from `/proc/net/dev` at a fixed interval (let’s say every 100ms), read the next value and calculate the difference. This is a persistent process written in compiled C that runs in the background. In the next step, I’ll create a `systemd` unit file that uses this program as the basis for a service.
 
-The contents of this source file, which I’ve named `raspap-network-monitor.c`, is shown below:
+The contents of this [source file](https://github.com/RaspAP/raspap-webgui/blob/master/installers/raspap-network-monitor.c), which I’ve named `raspap-network-monitor.c`, is shown below:
 ```c linenums="1"
 /*
 RaspAP Network Activity Monitor
@@ -162,7 +162,7 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-There are a couple of things worth noting here. First, the monitored interface defaults to wlan0, however this can be changed by specifying a value with the `— i| — interface` argument. The interface value is then used in `read_interface_bytes()` to fetch the current TX/RX byte values. From there, it’s a simple matter of calculating the difference from the previous ones.
+There are a couple of things worth noting here. First, the monitored interface is set by passing a value for the first argument (`*iface = argv[1]`). The interface value is then used in `read_interface_bytes()` to fetch the current TX/RX byte values. From there, it’s a simple matter of calculating the difference from the previous ones.
 
 The second item of interest is the location this value is written to, and how it’s done. `/dev/shm/` is a **temporary file storage** (tmpfs) that resides in RAM. In this context, “shm” is a reference to shared memory. You can see it on your system with mount or df, like so:
 ```bash
@@ -172,9 +172,9 @@ tmpfs           454M   16K  454M   1% /dev/shm
 ```
 Originally designed for inter-process communication (IPC), `/dev/shm/` is often used for temporary **high-speed files** (e.g., logs, metrics), RAM-based caching and named memory blocks for C/C++ or other low-level programs. Read/write operations are extremely fast with almost no I/O latency, making it ideal for this application. The contents of tmpfs are lost on reboots, but this isn’t a concern.
 
-Finally, one could simply use `echo "$total_diff" > "$TMPFILE"` to write out to tmpfs. However, due to timing issues, the file can be **read mid-write** (i.e., during echo in the shell script). On the front-end, this will often return an error such as `ERR_CONTENT_LENGTH_MISMATCH 200 (OK)`. Even if the response returns `200 OK`, the browser will throw an error because the response body didn’t match the declared length.
+Finally, in Bash one could simply use `echo "$total_diff" > "$TMPFILE"` to write out to tmpfs. However, due to timing issues, the file can be **read mid-write** (i.e., during echo in the shell script). On the front-end, this will often return an error such as `ERR_CONTENT_LENGTH_MISMATCH 200 (OK)`. Even if the response returns `200 OK`, the browser will throw an error because the response body didn’t match the declared length.
 
-The solution is to instead write automically with a temp file and use `mv`:
+The solution is to instead write automically with a temp file and use `mv`. This is done in Bash like so:
 ```bash
 tmpfile=$(mktemp /dev/shm/net_activity.XXXXXX)
 echo "$total_diff" > "$tmpfile"
