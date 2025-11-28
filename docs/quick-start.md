@@ -14,10 +14,10 @@ Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a h
 
 | Distribution | Debian version | Kernel version | RaspAP version | Size |
 | ------------ | -------------- | -------------- | -------------- | ---- |
-| Raspberry Pi OS (64-bit) Lite | 13 (trixie) | 6.12 | Latest | 826 MB |
-| Raspberry Pi OS (32-bit) Lite | 13 (trixie) | 6.12 | Latest | 799 MB |
+| Raspberry Pi OS (64-bit) Lite | 13 (trixie) | 6.12 | Latest | 885 MB |
+| Raspberry Pi OS (32-bit) Lite | 13 (trixie) | 6.12 | Latest | 858 MB |
 
-After downloading your desired image, use a utility such as the [Raspberry Pi Imager](https://www.raspberrypi.com/software/) or [balenaEtcher](https://www.balena.io/etcher) to flash the OS image onto a microSD card. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the [Initial Settings](#initial-settings) on how to connect. 
+After downloading your desired image, use the [v1.9.6 release of Raspberry Pi Imager](https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6) to flash the OS image onto a microSD card. The Pi Imager is recommended because it let's you modify optional configuration settings, such as setting a username and password, and enabling access via SSH. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the [Initial settings](#initial-settings) on how to connect. 
 
 ## Quick installer
 Alternatively, begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.
