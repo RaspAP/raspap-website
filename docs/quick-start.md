@@ -66,10 +66,13 @@ RaspAP was originally made for Raspberry Pi OS, but now also installs on the fol
 | Raspberry Pi OS Desktop | 64-bit Debian 12 (bookworm) | ARM | Official | 
 | Raspberry Pi OS Lite | 64-bit Debian 11 (bullseye) | ARM | Official | 
 | Raspberry Pi OS Lite | 32-bit Debian 11 (bullseye) | ARM | Official | 
-| Armbian  | 23.11 (jammy)  | ARM  | Beta  |
-| Debian | 12 (bookworm) | ARM / x86_64 | Beta |
+| Kali Linux |  2025.3 | [ARM 64-bit](https://www.kali.org/get-kali/#kali-arm) | Beta |
+| Kali Linux | 2025.3 | [ARM 32-bit](https://www.kali.org/get-kali/#kali-arm) | Beta |
+| Armbian | 23.11  (jammy) | [ARM](https://www.armbian.com/rpi4b/) | Beta |
+| Debian 13 |  trixie | [ARM](https://raspi.debian.net/tested-images/) | Beta |
+| Debian 12  |  bookworm | [ARM](https://raspi.debian.net/tested-images/)  | Beta |
 
-<img src="/assets/images/supported-distros.png" style="max-width: 60%;" alt="Supported distributions">
+<img src="/assets/images/distros.png" style="max-width: 80%;" alt="Supported distributions">
 
 You are also encouraged to try RaspAP's community-led <a href="https://github.com/RaspAP/raspap-docker">Docker container</a>.
 
