@@ -1,8 +1,8 @@
 ---
 date:
   created: 2025-11-30
-title: Say "hello" to Kali Linux 2025.3 
-linkTitle: Say "hello" to Kali Linux 2025.3
+title: Say "hello" to Kali Linux 2025 support
+linkTitle: Say "hello" to Kali Linux 2025 support
 authors:
     - billz
 ---
