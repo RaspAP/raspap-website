@@ -6,6 +6,11 @@ hide:
 
 RaspAP gives you two different ways to get up and running quickly. The simplest approach is to use our <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">custom OS image</a> with RaspAP preinstalled. This option eliminates guesswork and gives you a base upon which to build. An alternative method is to execute the Quick installer on an existing <a href="#distros">compatible OS</a>.
 
+## Supported uses
+While RaspAP is constantly evolving and adding new features and capabilities, the most common and well supported use cases of RaspAP are as a stand-alone router, or a WiFi repeater/extender to an existing network. Both of these allow for both wired and wireless connections for both WAN (on left side of diagram below) and LAN (on right side of diagram below) connectivity. Cellular WAN connectivity (via USB of WiFi to cell phone) are also supported, but not as commonly used. For WAN usage, only one method is supported at a time; however for LAN usage, both methods are supported simultaneously. Read more in our [documentation](https://docs.raspap.com/use-cases).  
+
+<img src="/assets/images/connectivity.png">
+
 ## Custom OS
 Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">direct download</a>. This includes both `arm64` or `armhf` (32-bit) based builds, for ARM architectures.
 
