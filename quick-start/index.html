@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -34,7 +34,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -634,6 +634,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Custom OS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-imager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raspberry Pi Imager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Direct download
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -965,6 +993,34 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Custom OS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raspberry-pi-imager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raspberry Pi Imager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#direct-download" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Direct download
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1038,12 +1094,17 @@
   <h1>Quick Start</h1>
 
 
-<p>RaspAP gives you two different ways to get up and running quickly. The simplest approach is to use our <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">custom OS image</a> with RaspAP preinstalled. This option eliminates guesswork and gives you a base upon which to build. An alternative method is to execute the Quick installer on an existing <a href="#distros">compatible OS</a>.</p>
+<p>RaspAP gives you two different ways to get up and running quickly. The simplest approach is to use our custom OS image with RaspAP preinstalled via the <strong>Raspberry Pi Imager</strong> (preferred method). This option eliminates guesswork, lets you customize settings before flashing, and gives you a base upon which to build. An alternative method is to execute the Quick installer on an existing <a href="#distros">compatible OS</a>.</p>
 <h2 id="custom-os">Custom OS<a class="headerlink" href="#custom-os" title="Permanent link">&para;</a></h2>
-<p>Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">direct download</a>. This includes both <code>arm64</code> or <code>armhf</code> (32-bit) based builds, for ARM architectures.</p>
+<h3 id="raspberry-pi-imager">Raspberry Pi Imager<a class="headerlink" href="#raspberry-pi-imager" title="Permanent link">&para;</a></h3>
+<p>The easiest way to install RaspAP is by using the official <a href="https://www.raspberrypi.com/software/">Raspberry Pi Imager</a>. This method lets you select RaspAP directly from the "Other specific-purpose OS" category. You can also customize settings (hostname, username, password and SSH access) before flashing directly to your microSD card in one step.</p>
+<p><img src="/assets/images/imager.png" style="max-width: 80%;" alt="Raspberry Pi Imager"></p>
+<p>Simply download and launch Raspberry Pi Imager, choose <strong>OS → Other specific-purpose OS → RaspAP</strong>, select your preferred architecture (64-bit or 32-bit), and follow the prompts to configure and flash your card.</p>
+<h3 id="direct-download">Direct download<a class="headerlink" href="#direct-download" title="Permanent link">&para;</a></h3>
+<p>Custom Raspberry Pi OS Lite images with the latest RaspAP are also available for <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">direct download</a>. This includes both <code>arm64</code> (64-bit) or <code>armhf</code> (32-bit) based builds for ARM architectures.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>In an effort to enable more people to download RaspAP, starting with v3.4.1, we've made available Torrent files for the images. The downloads will still come from Github, but will be able to completely finish without falling victim to Github's token timeout issues. Please connect with us if you still have issues downloading.</p>
+<p>Experiencing download timeouts? We provide torrent files that resolve GitHub's token timeout issues while still downloading from GitHub's servers. Visit our <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">latest release</a> page to download a torrent file for your desired architecture.</p>
 </div>
 <table>
 <thead>
@@ -1072,9 +1133,9 @@
 </tr>
 </tbody>
 </table>
-<p>After downloading your desired image, use the <a href="https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6">v1.9.6 release of Raspberry Pi Imager</a> to flash the OS image onto a microSD card. The Pi Imager is recommended because it let's you modify optional configuration settings, such as setting a username and password, and enabling access via SSH. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the <a href="#initial-settings">Initial settings</a> on how to connect. </p>
+<p>After downloading your desired image, use the <a href="https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6">v1.9.6 release of Raspberry Pi Imager</a> or later to flash the OS image onto a microSD card. The Pi Imager is recommended because it lets you modify optional configuration settings, such as setting a username and password, and enabling access via SSH. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the <a href="#initial-settings">Initial settings</a> for details on how to connect.</p>
 <h2 id="quick-installer">Quick installer<a class="headerlink" href="#quick-installer" title="Permanent link">&para;</a></h2>
-<p>Alternatively, begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.</p>
+<p>As an alternative to a custom OS, RaspAP can be added to an existing system using the Quick installer. Begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.</p>
 <p>Update your OS to its latest version, including the kernel and firmware, followed by a reboot:
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo apt-get update
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo apt-get full-upgrade
@@ -1354,11 +1415,11 @@ RaspAP was originally made for Raspberry Pi OS, but now also installs on the fol
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.tooltips", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.tooltips", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   
-      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../js/open_in_new_tab.js"></script>
       
