@@ -11,7 +11,7 @@ RaspAP gives you two different ways to get up and running quickly. The simplest 
 ### Raspberry Pi Imager
 The easiest way to install RaspAP is by using the official [Raspberry Pi Imager](https://www.raspberrypi.com/software/). This method lets you select RaspAP directly from the "Other specific-purpose OS" category. You can also customize settings (hostname, username, password and SSH access) before flashing directly to your microSD card in one step.
 
-<img src="/assets/images/imager.png" style="max-width: 80%;" alt="Raspberry Pi Imager">
+<img src="/assets/images/imager.png" style="max-width: 90%;" alt="Raspberry Pi Imager">
 
 Simply download and launch Raspberry Pi Imager, choose **OS → Other specific-purpose OS → RaspAP**, select your preferred architecture (64-bit or 32-bit), and follow the prompts to configure and flash your card.
 
