@@ -4,23 +4,32 @@ hide:
   - navigation
 ---
 
-RaspAP gives you two different ways to get up and running quickly. The simplest approach is to use our <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">custom OS image</a> with RaspAP preinstalled. This option eliminates guesswork and gives you a base upon which to build. An alternative method is to execute the Quick installer on an existing <a href="#distros">compatible OS</a>.
+RaspAP gives you two different ways to get up and running quickly. The simplest approach is to use our custom OS image with RaspAP preinstalled via the **Raspberry Pi Imager** (preferred method). This option eliminates guesswork, lets you customize settings before flashing, and gives you a base upon which to build. An alternative method is to execute the Quick installer on an existing <a href="#distros">compatible OS</a>.
 
 ## Custom OS
-Custom Raspberry Pi OS Lite images with the latest RaspAP are available for <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">direct download</a>. This includes both `arm64` or `armhf` (32-bit) based builds, for ARM architectures.
+
+### Raspberry Pi Imager
+The easiest way to install RaspAP is by using the official [Raspberry Pi Imager](https://www.raspberrypi.com/software/). This method lets you select RaspAP directly from the "Other specific-purpose OS" category. You can also customize settings (hostname, username, password and SSH access) before flashing directly to your microSD card in one step.
+
+<img src="/assets/images/imager.png" style="max-width: 80%;" alt="Raspberry Pi Imager">
+
+Simply download and launch Raspberry Pi Imager, choose **OS → Other specific-purpose OS → RaspAP**, select your preferred architecture (64-bit or 32-bit), and follow the prompts to configure and flash your card.
+
+### Direct download
+Custom Raspberry Pi OS Lite images with the latest RaspAP are also available for <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">direct download</a>. This includes both `arm64` (64-bit) or `armhf` (32-bit) based builds for ARM architectures.
 
 !!! Tip
-    In an effort to enable more people to download RaspAP, starting with v3.4.1, we've made available Torrent files for the images. The downloads will still come from Github, but will be able to completely finish without falling victim to Github's token timeout issues. Please connect with us if you still have issues downloading.
+    Experiencing download timeouts? We provide torrent files that resolve GitHub's token timeout issues while still downloading from GitHub's servers. Visit our <a href="https://github.com/RaspAP/raspap-webgui/releases/latest">latest release</a> page to download a torrent file for your desired architecture.
 
 | Distribution | Debian version | Kernel version | RaspAP version | Size |
 | ------------ | -------------- | -------------- | -------------- | ---- |
 | Raspberry Pi OS (64-bit) Lite | 13 (trixie) | 6.12 | Latest | 885 MB |
 | Raspberry Pi OS (32-bit) Lite | 13 (trixie) | 6.12 | Latest | 858 MB |
 
-After downloading your desired image, use the [v1.9.6 release of Raspberry Pi Imager](https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6) to flash the OS image onto a microSD card. The Pi Imager is recommended because it let's you modify optional configuration settings, such as setting a username and password, and enabling access via SSH. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the [Initial settings](#initial-settings) on how to connect. 
+After downloading your desired image, use the [v1.9.6 release of Raspberry Pi Imager](https://github.com/raspberrypi/rpi-imager/releases/tag/v1.9.6) or later to flash the OS image onto a microSD card. The Pi Imager is recommended because it lets you modify optional configuration settings, such as setting a username and password, and enabling access via SSH. Insert the card into your device and boot it up. The latest RaspAP release with the most popular components will be active and ready for you to configure. Please review the [Initial settings](#initial-settings) for details on how to connect.
 
 ## Quick installer
-Alternatively, begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.
+As an alternative to a custom OS, RaspAP can be added to an existing system using the Quick installer. Begin with a clean install of the latest release of a <a href="#distros">supported Linux distribution</a>. In the example below, <a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit">Raspberry Pi OS (64-bit) Lite</a> is used.
 
 Update your OS to its latest version, including the kernel and firmware, followed by a reboot:
 ```
