@@ -12,15 +12,15 @@ Do you have an innovative project, experiment or tutorial you've developed with 
 - [Butter Box](https://likebutter.app/docs/build-a-box) - an app store, encrypted chat & more, available over WiFi from an off-grid Raspberry Pi 
 - [Connecting a Pi, iPad, HoloLens, and Magic Leap ML1](https://www.mikebuss.com/posts/ipad-hololens-rpi-part-1) - communication between these devices in places with unreliable WiFi
 - [Et si on Utilisait Minecraft au Collège ?](https://mathix.org/linux/archives/17928) - Using Minecraft + RaspAP in education
-- [FreedomEV](https://github.com/jnuyens/freedomev/) - Unlocking the full potential of Linux on your EV ( 📸 [RaspAP on a rooted Tesla](https://i.imgur.com/D8XlRkZ.jpg) )
+- [FreedomEV](https://github.com/jnuyens/freedomev/) - Unlocking the full potential of Linux on your EV ([RaspAP on a rooted Tesla](https://i.imgur.com/D8XlRkZ.jpg) )
 - [Hacking my Air Purifier](https://joshspicer.com/hack-air-purifier) - Monitoring network traffic using RaspAP with a "smart" air purifier
-- [Ham Radio Winter Tent Camping | Winter Field Day](https://youtu.be/jCfdIonDL8I?t=534) - Preparedness & off-grid communications 📽
+- [Ham Radio Winter Tent Camping | Winter Field Day](https://youtu.be/jCfdIonDL8I?t=534) - Preparedness & off-grid communications
 - [iTex Gloves](https://www.mdpi.com/1424-8220/23/6/2877/htm) - an in-home evaluation of an e-textile glove system for tele-assessment of Parkinson’s Disease
 - [Low-cost wireless endoscope camera](https://afju.springeropen.com/articles/10.1186/s12301-021-00127-z) - a preliminary report
 - [OpenFJ is multi-functional appliance made for adventure travel](https://openvino.atlassian.net/wiki/spaces/OPENVINO/pages/310018055/OpenFJ+OpenSJ) -  OpenFJ is intended for use in a Toyota FJ Cruiser, OpenSJ is the version for the ocean sailing vessel Sojourner
-- [Pool pH Level and Temperature Wifi Monitor](https://deanfourie.me/pool-monitor/3/) ( 📸 [Project photo](https://imgur.com/a/eGVyTUf) )
+- [Pool pH Level and Temperature Wifi Monitor](https://deanfourie.me/pool-monitor/3/) ([Project photo](https://imgur.com/a/eGVyTUf) )
 - [Raspberry Pi Construction Cam](https://darkspirit510.de/2021/10/raspberry-pi-construction-cam/)
-- [Routour🗼](https://archfx.me/routour) - Building the ultimate travel router
+- [Routour](https://archfx.me/routour) - Building the ultimate travel router
 - [Secure Scuttlebutt Weather Station](https://rickcarlino.com/2019/04/06/a-weather-station-with-raspberry-pi-and-secure-scuttlebutt-html.html) - Replicating, peer-to-peer database of weather log data
 - [Smart Window Opener](https://www.hackster.io/Infineon_Team/smart-window-opener-dd5fba) - Upgrade your window from a lame one to an awesome smart one
 - [Subsea resident autonomous underwater vehicle (AUV)](https://discuss.bluerobotics.com/t/subsea-resident-auv/9771) - RaspAP used for wireless communication with the AUV's dock

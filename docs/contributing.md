@@ -13,7 +13,7 @@
 
 ## Adding an item to the list
 
-1. Click the **pencil button** ✏️ in the upper right corner of [awesome page](awesome.md).
+1. Click the **Edit this page** :material-file-edit: in the upper right corner of [awesome page](awesome.md).
 2. This link will open the page in GitHub for editing in a new window.
 4. Add your edit to `awesome.md`.
 5. At the bottom of the page, fill in a meaningful commit summary and click **Propose file change**.
