@@ -147,6 +147,8 @@ nav:
     - blog/index.md
   - Docs:
     - https://docs.raspap.com
+  - Awesome:
+    - awesome.md
   - Status:
     - https://stats.uptimerobot.com/TDu7wXbKue
 watch:
