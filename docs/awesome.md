@@ -12,13 +12,13 @@ Do you have an innovative project, experiment or tutorial you've developed with 
 - [Butter Box](https://likebutter.app/docs/build-a-box) - an app store, encrypted chat & more, available over WiFi from an off-grid Raspberry Pi 
 - [Connecting a Pi, iPad, HoloLens, and Magic Leap ML1](https://www.mikebuss.com/posts/ipad-hololens-rpi-part-1) - communication between these devices in places with unreliable WiFi
 - [Et si on Utilisait Minecraft au Collège ?](https://mathix.org/linux/archives/17928) - Using Minecraft + RaspAP in education
-- [FreedomEV](https://github.com/jnuyens/freedomev/) - Unlocking the full potential of Linux on your EV ([RaspAP on a rooted Tesla](https://i.imgur.com/D8XlRkZ.jpg) )
+- [FreedomEV](https://github.com/jnuyens/freedomev/) - Unlocking the full potential of Linux on your EV ([RaspAP on a rooted Tesla](https://imgur.com/D8XlRkZ.jpg))
 - [Hacking my Air Purifier](https://joshspicer.com/hack-air-purifier) - Monitoring network traffic using RaspAP with a "smart" air purifier
 - [Ham Radio Winter Tent Camping | Winter Field Day](https://youtu.be/jCfdIonDL8I?t=534) - Preparedness & off-grid communications
 - [iTex Gloves](https://www.mdpi.com/1424-8220/23/6/2877/htm) - an in-home evaluation of an e-textile glove system for tele-assessment of Parkinson’s Disease
 - [Low-cost wireless endoscope camera](https://afju.springeropen.com/articles/10.1186/s12301-021-00127-z) - a preliminary report
 - [OpenFJ is multi-functional appliance made for adventure travel](https://openvino.atlassian.net/wiki/spaces/OPENVINO/pages/310018055/OpenFJ+OpenSJ) -  OpenFJ is intended for use in a Toyota FJ Cruiser, OpenSJ is the version for the ocean sailing vessel Sojourner
-- [Pool pH Level and Temperature Wifi Monitor](https://deanfourie.me/pool-monitor/3/) ([Project photo](https://imgur.com/a/eGVyTUf) )
+- [Pool pH Level and Temperature Wifi Monitor](https://deanfourie.me/pool-monitor/3/) ([Project photo](https://imgur.com/a/eGVyTUf))
 - [Raspberry Pi Construction Cam](https://darkspirit510.de/2021/10/raspberry-pi-construction-cam/)
 - [Routour](https://archfx.me/routour) - Building the ultimate travel router
 - [Secure Scuttlebutt Weather Station](https://rickcarlino.com/2019/04/06/a-weather-station-with-raspberry-pi-and-secure-scuttlebutt-html.html) - Replicating, peer-to-peer database of weather log data
@@ -53,9 +53,10 @@ Sixfab cellular HAT, built for travel
 - [Turn your Raspberry Pi into a VPN with Tor as Access Point](https://medium.com/@mshlab/raspberrypi-vpn-with-tor-as-access-point-c03f5ef19ccd)
 - [Using Sixfab Raspberry Pi Shield/HAT as a Wi-Fi Hotspot
 ](https://docs.sixfab.com/page/using-sixfab-raspberry-pi-shield-hat-as-a-wi-fi-hotspot)
-- [ZDNET: I built my own Wi-Fi router with a Raspberry Pi for Starlink and solar control](https://www.zdnet.com/home-and-office/networking/how-i-built-my-own-wifi-router-with-raspberry-pi/)
+
 ## Articles
 - [4 reasons I installed RaspAP on my Raspberry Pi](https://www.xda-developers.com/4-reasons-installed-raspap-raspberry-pi/?taid=684f6cb9d3dbfc0001f3bb08)
+- [I built my own Wi-Fi router with a Raspberry Pi for Starlink and solar control - here's how](https://www.zdnet.com/home-and-office/networking/how-i-built-my-own-wifi-router-with-raspberry-pi/)
 - [Low-cost Raspberry Pi Zero endoscope camera](https://www.raspberrypi.org/blog/low-cost-raspberry-pi-zero-endoscope-camera/)
 - [Stop trusting hotel Wi-Fi: Build this Raspberry Pi travel router instead](https://www.howtogeek.com/stop-trust-hotel-wi-fi-build-raspberry-pi-travel-router/)
 - [Raspberry Pi als WLAN-Router einsetzen – so geht’s](https://www.pcwelt.de/article/1789512/raspberry-pi-als-wlan-router.html)
