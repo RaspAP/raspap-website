@@ -9,33 +9,31 @@
         <meta name="description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
       
       
-        <meta name="author" content="([Bill Z](https://github.com/billz))">
+        <meta name="author" content="RaspAP Community">
       
       
-        <link rel="canonical" href="https://raspap.com/blog/restful-api-challenge/">
+        <link rel="canonical" href="https://raspap.com/contributing/">
       
       
-      
-        <link rel="next" href="../building-a-realtime-network-traffic-led-indicator/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/favicon.ico">
+      <link rel="icon" href="../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>RESTful API challenge - The Debian wireless router</title>
+        <title>Contribution guide - The Debian wireless router</title>
       
     
     
   
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,12 +45,12 @@
 
 
     
-  <link rel="stylesheet" href="../../assets/stylesheets/customs.css">
-  <link rel="stylesheet" href="../../assets/stylesheets/partials/colors.css">
-  <link rel="stylesheet" href="../../assets/stylesheets/partials/setup.css">
-  <link rel="stylesheet" href="../../assets/stylesheets/partials/layout.css">
-  <link rel="stylesheet" href="../../assets/stylesheets/partials/reference.css">
-  <link rel="stylesheet" href="../../assets/stylesheets/partials/typeset.css">
+  <link rel="stylesheet" href="../assets/stylesheets/customs.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/colors.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/setup.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/layout.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/reference.css">
+  <link rel="stylesheet" href="../assets/stylesheets/partials/typeset.css">
 
     
       
@@ -67,9 +65,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/extra.css">
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -91,8 +89,8 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://raspap.com/blog/restful-api-challenge/">
-  <meta property="og:title" content="RESTful API challenge - The Debian wireless router">
+  <meta property="og:url" content="https://raspap.com/contributing/">
+  <meta property="og:title" content="Contribution guide - The Debian wireless router">
   <meta property="og:description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
   <meta property="og:site_name" content="The Debian wireless router">
   
@@ -101,8 +99,8 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://raspap.com/blog/restful-api-challenge/">
-  <meta property="twitter:title" content="RESTful API challenge - The Debian wireless router">
+  <meta property="twitter:url" content="https://raspap.com/contributing/">
+  <meta property="twitter:title" content="Contribution guide - The Debian wireless router">
   <meta property="twitter:description" content="The easiest, full-featured wireless router setup for Debian-based devices. Period.">
   
   <meta property="twitter:image" content="https://raspap.com/assets/images/og-image.jpg">
@@ -128,7 +126,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#judging-criteria" class="md-skip">
+        <a href="#contribution-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -184,7 +182,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -205,7 +203,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../quick-start/" class="md-tabs__link">
+        <a href="../quick-start/" class="md-tabs__link">
           
   
   
@@ -227,7 +225,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../kit/" class="md-tabs__link">
+        <a href="../kit/" class="md-tabs__link">
           
   
   
@@ -245,13 +243,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../blog/" class="md-tabs__link">
           
   
   
@@ -295,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../awesome/" class="md-tabs__link">
+        <a href="../awesome/" class="md-tabs__link">
           
   
   
@@ -456,9 +452,7 @@
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -469,9 +463,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="The Debian wireless router" class="md-nav__button md-logo" aria-label="The Debian wireless router" data-md-component="logo">
+    <a href=".." title="The Debian wireless router" class="md-nav__button md-logo" aria-label="The Debian wireless router" data-md-component="logo">
       
-  <img src="../../assets/logo.png" alt="logo">
+  <img src="../assets/logo.png" alt="logo">
 
     </a>
     The Debian wireless router
@@ -498,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -549,7 +543,7 @@
   
   
   
-    <a href="../../quick-start/" class="md-nav__link">
+    <a href="../quick-start/" class="md-nav__link">
       
   
   
@@ -606,7 +600,7 @@
   
   
   
-    <a href="../../kit/" class="md-nav__link">
+    <a href="../kit/" class="md-nav__link">
       
   
   
@@ -636,8 +630,6 @@
       
   
   
-    
-  
   
   
     
@@ -653,26 +645,24 @@
     
     
       
-        
-        
-      
       
         
       
     
     
       
+        
+        
+      
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
+  
+  
+  
+    <a href="../blog/" class="md-nav__link">
+      
   
   
   <span class="md-ellipsis">
@@ -686,163 +676,12 @@
   
   
 
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Blog
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
       
-        
+        <span class="md-nav__icon md-icon"></span>
       
-        
-      
-    
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Archive
+    </a>
   
 
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Archive
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    
-  
-  
-    <li class="md-nav__item">
-      <a href="../archive/2025/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2025
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    
-  
-  
-    <li class="md-nav__item">
-      <a href="../archive/2024/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2024
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
       
     </li>
   
@@ -936,7 +775,7 @@
   
   
   
-    <a href="../../awesome/" class="md-nav__link">
+    <a href="../awesome/" class="md-nav__link">
       
   
   
@@ -1027,8 +866,6 @@
             
             
               
-                
-              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1040,6 +877,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1048,10 +887,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#judging-criteria" class="md-nav__link">
+  <a href="#before-adding-something-to-the-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Judging criteria
+        Before adding something to the list
       
     </span>
   </a>
@@ -1059,10 +898,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prizes" class="md-nav__link">
+  <a href="#adding-an-item-to-the-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prizes
+        Adding an item to the list
       
     </span>
   </a>
@@ -1070,32 +909,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rules" class="md-nav__link">
+  <a href="#github-links" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Rules
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting started
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#discussions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Discussions
+        Github links
       
     </span>
   </a>
@@ -1111,87 +928,14 @@
             
           
           
-  <div class="md-content md-content--post" data-md-component="content">
-    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
-      <div class="md-sidebar__scrollwrap">
-        <div class="md-sidebar__inner md-post">
-          <nav class="md-nav md-nav--primary">
-            <div class="md-post__back">
-              <div class="md-nav__title md-nav__container">
-                <a href="../" class="md-nav__link">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-                  <span class="md-ellipsis">
-                    Back to index
-                  </span>
-                </a>
-              </div>
-            </div>
-            
-              <div class="md-post__authors md-typeset">
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
                 
-                  <div class="md-profile md-post__profile">
-                    <span class="md-author md-author--long">
-                      <img src="/blog/assets/images/billz.jpeg" alt="Bill Zimmerman">
-                    </span>
-                    <span class="md-profile__description">
-                      <strong>
-                        
-                          <a href="https://github.com/billz">Bill Zimmerman</a>
-                        
-                      </strong>
-                      <br>
-                      Creator
-                    </span>
-                  </div>
-                
-              </div>
-            
-            <ul class="md-post__meta md-nav__list">
-              <li class="md-nav__item md-nav__item--section">
-                <div class="md-post__title">
-                  <span class="md-ellipsis">
-                    Metadata
-                  </span>
-                </div>
-                <nav class="md-nav">
-                  <ul class="md-nav__list">
-                    <li class="md-nav__item">
-                      <div class="md-nav__link">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2024-03-13 00:00:00+00:00" class="md-ellipsis">March 13, 2024</time>
-                      </div>
-                    </li>
-                    
-                    
-                    
-                      
-                      <li class="md-nav__item">
-                        <div class="md-nav__link">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
-                          <span class="md-ellipsis">
-                            
-                              2 min read
-                            
-                          </span>
-                        </div>
-                      </li>
-                    
-                  </ul>
-                </nav>
-              </li>
-            </ul>
-            
-          </nav>
-          
-        </div>
-      </div>
-    </div>
-    <article class="md-content__inner md-typeset">
-      
-        
+                  
 
   
-    <a href="https://github.com/RaspAP/raspap-website/edit/master/docs/blog/posts/restapi.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/RaspAP/raspap-website/edit/master/docs/contributing.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -1199,30 +943,46 @@
   
 
 
-  <h1>RESTful API challenge</h1>
 
-
-<p><img src="/blog/assets/images/clark-van-der-beken-596baa0MpyM-unsplash.jpg" width="600px"><br/>
-<sub><em>Photo by <a href="https://unsplash.com/@snapsbyclark?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Clark Van Der Beken</a> on <a href="https://unsplash.com/photos/white-and-black-heart-print-iphone-case-596baa0MpyM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></em></sub></p>
-<p>The developers at RaspAP have recently <a href="https://github.com/RaspAP/raspap-webgui/pull/1519">rolled out</a> a new <a href="https://docs.raspap.com/restapi/">RestAPI</a> based on the ultra-quick <a href="https://fastapi.tiangolo.com/">FastAPI</a> framework. Support for an API has ranked high among requests from RaspAP’s users for quite some time. To mark this occasion (and also celebrate <a href="https://en.wikipedia.org/wiki/Pi_Day">Pi Day</a>) we’re hosting a friendly challenge to see what kinds of creative applications developers can bake up with our brand-spanking-new RestAPI.</p>
-<!-- more -->
-
-<h2 id="judging-criteria">Judging criteria<a class="headerlink" href="#judging-criteria" title="Permanent link">&para;</a></h2>
-<p>In terms of possible applications, anything goes. Points will be awarded by the judges for apps that are original, polished, visually appealing and have real-world utility. Integrations with other popular open source projects are a big plus.</p>
-<h2 id="prizes">Prizes<a class="headerlink" href="#prizes" title="Permanent link">&para;</a></h2>
-<p>Prizes, you ask? Why, yes of course. To make things interesting, we’ll be giving away <strong>lifetime <a href="https://docs.raspap.com/insiders/">Insiders</a></strong> access to the <strong>top three entries</strong>, plus <strong>$50</strong> to cover pi(e) and coffee expenses. See what we did there?</p>
-<h2 id="rules">Rules<a class="headerlink" href="#rules" title="Permanent link">&para;</a></h2>
-<p>The rules are straightforward:</p>
+<h1 id="contribution-guide">Contribution guide<a class="headerlink" href="#contribution-guide" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Note: The pull request should have a useful title. To get your PR approved quickly, avoid titles like <code>update awesome.md</code>. </p>
+</blockquote>
+<h2 id="before-adding-something-to-the-list">Before adding something to the list<a class="headerlink" href="#before-adding-something-to-the-list" title="Permanent link">&para;</a></h2>
 <ol>
-<li>All code must have an open source license and be publicly available.</li>
-<li>One prize awarded per developer or team.</li>
-<li>Multiple entries may be submitted. If selected, the best entry will be awarded (see #2).</li>
-<li>Submit your entry by posting a link in the comments below.</li>
+<li>Make sure you are editing <code>awesome.md</code> only.</li>
+<li>Add your item to the category it belongs to. Try to avoid creating completely new categories.</li>
+<li>Be sure to add your item in the correct alphabetical order for its section.</li>
+<li>Don't submit dead links and try to always submit HTTPS links.</li>
+<li>Linking to resources in languages other than English is welcome and encouraged.</li>
+<li>Add something that is truly awesome and stands out.</li>
 </ol>
-<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>Our <a href="https://docs.raspap.com/restapi/">docs</a> have everything you need to get started. The RESTful API Challenge runs for 30 days, ending April 14th, 2024. Winners will be announced via this blog, <a href="https://github.com/RaspAP/raspap-webgui/discussions">GitHub discussions</a>, <a href="https://reddit.com/r/RaspAP">Reddit</a>, <a href="https://discord.gg/KVAsaAR">Discord</a> and <a href="https://x.com/rasp_ap">X</a>.</p>
-<h2 id="discussions">Discussions<a class="headerlink" href="#discussions" title="Permanent link">&para;</a></h2>
-<p>Questions or comments the API challenge? Join the <a href="https://github.com/RaspAP/raspap-webgui/discussions/">discussion here</a>.</p>
+<h2 id="adding-an-item-to-the-list">Adding an item to the list<a class="headerlink" href="#adding-an-item-to-the-list" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Click the <strong>Edit this page</strong> <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-1.9l10-10V8l-6-6zm7 1.5L18.5 9H13zm7.1 9.5c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-2 1.8L12 20.9V23h2.1l6.1-6.1z"/></svg></span> in the upper right corner of <a href="../awesome/">awesome page</a>.</li>
+<li>This link will open the page in GitHub for editing in a new window.</li>
+<li>Add your edit to <code>awesome.md</code>.</li>
+<li>At the bottom of the page, fill in a meaningful commit summary and click <strong>Propose file change</strong>.</li>
+<li>You'll be taken to the PR screen, click the <strong>Create Pull Request</strong> button.</li>
+<li>Make sure you check the boxes (and actually confirm they're correct) and click <strong>Create Pull Request</strong>.</li>
+</ol>
+<p>Submitted PRs will be checked by a member of the RaspAP GitHub team. If something is incorrect it will be labeled <code>awaiting-user</code> with the problem stated in the PR comments.
+If a PR becomes stale or no action is taken after some time with the PR being labeled <code>awaiting-user</code>, this PR will get the <code>reply-timeout</code> label and will be closed.</p>
+<h2 id="github-links">Github links<a class="headerlink" href="#github-links" title="Permanent link">&para;</a></h2>
+<p>Specifying a Github link lets developers contribute to an open source project based on RaspAP.
+There are some interesting forks of RaspAP in the wild. Let's showcase them!</p>
+<p>You may add your Github link if the following conditions are true:</p>
+<ul>
+<li>The documentation (<code>README.md</code>) contains a description of the project, illustration of the project with a demo or screenshots and a CONTRIBUTING section.</li>
+<li>The project is active and maintained.</li>
+<li>The project accepts contributions.</li>
+</ul>
+<p>Example of addition:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[github project](https://github.com/user/raspap-webgui), [website](https://myproject.com) - Description 
+</span></code></pre></div></p>
+<p>The link provided should be the link of the github repository, not the demo.</p>
+
+
 
 
 
@@ -1231,21 +991,14 @@
 
 
   
-  
 
 
 
-  
 
-
-  
-
-
-
-      
-    </article>
-  </div>
-
+                
+              </article>
+            </div>
+          
           
   <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 
@@ -1262,30 +1015,6 @@
       
         <footer class="md-footer">
   
-    
-      
-        
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="../building-a-realtime-network-traffic-led-indicator/" class="md-footer__link md-footer__link--next" aria-label="Next: Building a realtime network traffic LED indicator">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Building a realtime network traffic LED indicator
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1371,16 +1100,16 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.tooltips", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.footnote.tooltips", "content.action.edit", "content.tooltips", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.expand", "navigation.prune", "navigation.footer", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
   
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../js/open_in_new_tab.js"></script>
+        <script src="../js/open_in_new_tab.js"></script>
       
     
-  <!-- <script src="../../assets/javascripts/custom.js"></script> -->
+  <!-- <script src="../assets/javascripts/custom.js"></script> -->
 
   </body>
 </html>
