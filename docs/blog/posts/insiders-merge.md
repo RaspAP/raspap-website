@@ -1,8 +1,8 @@
 ---
 date:
   created: 2026-09-25
-title: Insiders for everyone
-linkTitle: Insiders for everyone
+title: A change to Insiders
+linkTitle: A change to Insiders
 authors:
     - billz
 ---
