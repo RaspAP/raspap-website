@@ -292,6 +292,11 @@ body {
     background-color: #202328;
 }
 
+.button[data-type="inverted"] a .fa-heart {
+    color: #ea4aaa;
+    margin-inline-end: var(--size-08);
+}
+
 .button:hover,
 .button:focus-visible,
 .button:active {
