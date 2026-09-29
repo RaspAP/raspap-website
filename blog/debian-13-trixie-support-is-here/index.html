@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -34,7 +34,7 @@
     
     
   
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -723,6 +723,8 @@
       
         
       
+        
+      
     
     
     
@@ -774,6 +776,36 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1232,7 +1264,7 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo apt update
 </span></code></pre></div></li>
 <li>Upgrade to trixie by executing the following:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo apt full-upgrade -y -o Dpkg::Options::=&quot;--force-confdef&quot; -o Dpkg::Options::=&quot;--force-confnew&quot; --purge --auto-remove
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo apt full-upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confnew" --purge --auto-remove
 </span></code></pre></div>
 On a newer Pi model with a fast connection, the trixie upgrade takes about 10 minutes to complete. While it's running, you'll be asked to decide whether to restart services — answer "yes" to this prompt.</li>
 <li>Finally, reboot your system:
@@ -1256,7 +1288,7 @@ The <a href="http://github.com/RaspAP/raspap-webgui/releases/tag/3.4.3">version 
 <h2 id="whats-changed">What's changed?<a class="headerlink" href="#whats-changed" title="Permanent link">&para;</a></h2>
 <p>The biggest change in RaspAP under trixie is the move from <code>php-cgi</code> to <code>php-fpm</code> as the default PHP handler.</p>
 <p>In Debian 13 with PHP 8.4, the <code>php-cgi</code> runtime, when used with web servers like lighttpd, applies stricter permission limits by default, which affects certain applications. Notably, this prevents RaspAP from interacting with system tools such as <code>iw</code>, <code>ip</code>, or <code>wpa_cli</code> — all of which are needed to fetch details about the Linux networking environment. This results in errors like the following:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>The &quot;no new privileges&quot; flag is set, which prevents sudo from running as root.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>The "no new privileges" flag is set, which prevents sudo from running as root.
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Cannot open netlink socket: Address family not supported by protocol.
 </span></code></pre></div>
 <p>Even if sudo allows a given command for a specific user (usually, <code>www-data</code> under lighttpd), the <code>php-cgi</code> process doesn’t have the capabilities to execute it. </p>
@@ -1442,7 +1474,7 @@ If you previously ran <code>php-cgi</code> under lighttpd, you can switch to <co
     
     
   
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/open_in_new_tab.js"></script>
       

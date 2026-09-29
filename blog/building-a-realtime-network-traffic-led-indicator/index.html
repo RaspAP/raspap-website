@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -34,7 +34,7 @@
     
     
   
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -723,6 +723,8 @@
       
         
       
+        
+      
     
     
     
@@ -774,6 +776,36 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1441,11 +1473,11 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;errno.h&gt;</span>
 </span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span>
 </span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21"></a>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="cp">#define TMPFILE &quot;/dev/shm/net_activity&quot;</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="cp">#define TMPFILE "/dev/shm/net_activity"</span>
 </span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="cp">#define POLL_INTERVAL_MS 100 </span><span class="c1">// 100 milliseconds</span>
 </span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24"></a>
 </span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="nf">read_interface_bytes</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">iface</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">    </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">fp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="s">&quot;/proc/net/dev&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;r&quot;</span><span class="p">);</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="w">    </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">fp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="s">"/proc/net/dev"</span><span class="p">,</span><span class="w"> </span><span class="s">"r"</span><span class="p">);</span>
 </span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">fp</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28"></a>
 </span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29"></a><span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">line</span><span class="p">[</span><span class="mi">512</span><span class="p">];</span>
@@ -1453,9 +1485,9 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31"></a>
 </span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">fgets</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">line</span><span class="p">),</span><span class="w"> </span><span class="n">fp</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">strstr</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">iface</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">            </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;:&#39;</span><span class="p">);</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34"></a><span class="w">            </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">ptr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strchr</span><span class="p">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="sc">':'</span><span class="p">);</span>
 </span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="w">                </span><span class="n">sscanf</span><span class="p">(</span><span class="n">ptr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%lu %*u %*u %*u %*u %*u %*u %*u %lu&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rx</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tx</span><span class="p">);</span>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36"></a><span class="w">                </span><span class="n">sscanf</span><span class="p">(</span><span class="n">ptr</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">"%lu %*u %*u %*u %*u %*u %*u %*u %lu"</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">rx</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tx</span><span class="p">);</span>
 </span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37"></a><span class="w">            </span><span class="p">}</span>
 </span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
 </span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39"></a><span class="w">        </span><span class="p">}</span>
@@ -1467,7 +1499,7 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45"></a>
 </span><span id="__span-2-46"><a id="__codelineno-2-46" name="__codelineno-2-46"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">argv</span><span class="p">[])</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-47"><a id="__codelineno-2-47" name="__codelineno-2-47"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">argc</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-48"><a id="__codelineno-2-48" name="__codelineno-2-48"></a><span class="w">        </span><span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Usage: %s &lt;interface&gt;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+</span><span id="__span-2-48"><a id="__codelineno-2-48" name="__codelineno-2-48"></a><span class="w">        </span><span class="n">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span><span class="w"> </span><span class="s">"Usage: %s &lt;interface&gt;</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
 </span><span id="__span-2-49"><a id="__codelineno-2-49" name="__codelineno-2-49"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">EXIT_FAILURE</span><span class="p">;</span>
 </span><span id="__span-2-50"><a id="__codelineno-2-50" name="__codelineno-2-50"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-2-51"><a id="__codelineno-2-51" name="__codelineno-2-51"></a>
@@ -1477,7 +1509,7 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-55"><a id="__codelineno-2-55" name="__codelineno-2-55"></a><span class="w">    </span><span class="c1">// create a timerfd</span>
 </span><span id="__span-2-56"><a id="__codelineno-2-56" name="__codelineno-2-56"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">tfd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">timerfd_create</span><span class="p">(</span><span class="n">CLOCK_MONOTONIC</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
 </span><span id="__span-2-57"><a id="__codelineno-2-57" name="__codelineno-2-57"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tfd</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-58"><a id="__codelineno-2-58" name="__codelineno-2-58"></a><span class="w">        </span><span class="n">perror</span><span class="p">(</span><span class="s">&quot;timerfd_create&quot;</span><span class="p">);</span>
+</span><span id="__span-2-58"><a id="__codelineno-2-58" name="__codelineno-2-58"></a><span class="w">        </span><span class="n">perror</span><span class="p">(</span><span class="s">"timerfd_create"</span><span class="p">);</span>
 </span><span id="__span-2-59"><a id="__codelineno-2-59" name="__codelineno-2-59"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">EXIT_FAILURE</span><span class="p">;</span>
 </span><span id="__span-2-60"><a id="__codelineno-2-60" name="__codelineno-2-60"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-2-61"><a id="__codelineno-2-61" name="__codelineno-2-61"></a>
@@ -1488,7 +1520,7 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-66"><a id="__codelineno-2-66" name="__codelineno-2-66"></a><span class="w">    </span><span class="n">timer</span><span class="p">.</span><span class="n">it_value</span><span class="p">.</span><span class="n">tv_nsec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">POLL_INTERVAL_MS</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1000000</span><span class="p">;</span><span class="w">    </span><span class="c1">// initial expiration</span>
 </span><span id="__span-2-67"><a id="__codelineno-2-67" name="__codelineno-2-67"></a>
 </span><span id="__span-2-68"><a id="__codelineno-2-68" name="__codelineno-2-68"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">timerfd_settime</span><span class="p">(</span><span class="n">tfd</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">timer</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-69"><a id="__codelineno-2-69" name="__codelineno-2-69"></a><span class="w">        </span><span class="n">perror</span><span class="p">(</span><span class="s">&quot;timerfd_settime&quot;</span><span class="p">);</span>
+</span><span id="__span-2-69"><a id="__codelineno-2-69" name="__codelineno-2-69"></a><span class="w">        </span><span class="n">perror</span><span class="p">(</span><span class="s">"timerfd_settime"</span><span class="p">);</span>
 </span><span id="__span-2-70"><a id="__codelineno-2-70" name="__codelineno-2-70"></a><span class="w">        </span><span class="n">close</span><span class="p">(</span><span class="n">tfd</span><span class="p">);</span>
 </span><span id="__span-2-71"><a id="__codelineno-2-71" name="__codelineno-2-71"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">EXIT_FAILURE</span><span class="p">;</span>
 </span><span id="__span-2-72"><a id="__codelineno-2-72" name="__codelineno-2-72"></a><span class="w">    </span><span class="p">}</span>
@@ -1500,7 +1532,7 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-78"><a id="__codelineno-2-78" name="__codelineno-2-78"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(;;)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-2-79"><a id="__codelineno-2-79" name="__codelineno-2-79"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">poll</span><span class="p">(</span><span class="o">&amp;</span><span class="n">fds</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span>
 </span><span id="__span-2-80"><a id="__codelineno-2-80" name="__codelineno-2-80"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-81"><a id="__codelineno-2-81" name="__codelineno-2-81"></a><span class="w">            </span><span class="n">perror</span><span class="p">(</span><span class="s">&quot;poll&quot;</span><span class="p">);</span>
+</span><span id="__span-2-81"><a id="__codelineno-2-81" name="__codelineno-2-81"></a><span class="w">            </span><span class="n">perror</span><span class="p">(</span><span class="s">"poll"</span><span class="p">);</span>
 </span><span id="__span-2-82"><a id="__codelineno-2-82" name="__codelineno-2-82"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
 </span><span id="__span-2-83"><a id="__codelineno-2-83" name="__codelineno-2-83"></a><span class="w">        </span><span class="p">}</span>
 </span><span id="__span-2-84"><a id="__codelineno-2-84" name="__codelineno-2-84"></a>
@@ -1512,9 +1544,9 @@ Reading from <code>/proc/net/dev</code> is extremely low-cost — it's just a fi
 </span><span id="__span-2-90"><a id="__codelineno-2-90" name="__codelineno-2-90"></a><span class="w">            </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">curr_total</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">prev_total</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">(</span><span class="n">curr_total</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">prev_total</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-2-91"><a id="__codelineno-2-91" name="__codelineno-2-91"></a><span class="w">            </span><span class="n">prev_total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">curr_total</span><span class="p">;</span>
 </span><span id="__span-2-92"><a id="__codelineno-2-92" name="__codelineno-2-92"></a>
-</span><span id="__span-2-93"><a id="__codelineno-2-93" name="__codelineno-2-93"></a><span class="w">            </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="n">TMPFILE</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;w&quot;</span><span class="p">);</span>
+</span><span id="__span-2-93"><a id="__codelineno-2-93" name="__codelineno-2-93"></a><span class="w">            </span><span class="kt">FILE</span><span class="w"> </span><span class="o">*</span><span class="n">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fopen</span><span class="p">(</span><span class="n">TMPFILE</span><span class="p">,</span><span class="w"> </span><span class="s">"w"</span><span class="p">);</span>
 </span><span id="__span-2-94"><a id="__codelineno-2-94" name="__codelineno-2-94"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-95"><a id="__codelineno-2-95" name="__codelineno-2-95"></a><span class="w">                </span><span class="n">fprintf</span><span class="p">(</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;%lu</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">diff</span><span class="p">);</span>
+</span><span id="__span-2-95"><a id="__codelineno-2-95" name="__codelineno-2-95"></a><span class="w">                </span><span class="n">fprintf</span><span class="p">(</span><span class="n">out</span><span class="p">,</span><span class="w"> </span><span class="s">"%lu</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="w"> </span><span class="n">diff</span><span class="p">);</span>
 </span><span id="__span-2-96"><a id="__codelineno-2-96" name="__codelineno-2-96"></a><span class="w">                </span><span class="n">fclose</span><span class="p">(</span><span class="n">out</span><span class="p">);</span>
 </span><span id="__span-2-97"><a id="__codelineno-2-97" name="__codelineno-2-97"></a><span class="w">            </span><span class="p">}</span>
 </span><span id="__span-2-98"><a id="__codelineno-2-98" name="__codelineno-2-98"></a><span class="w">        </span><span class="p">}</span>
@@ -1534,9 +1566,9 @@ Originally designed for inter-process communication (IPC), <code>/dev/shm/</code
 <p>Finally, in Bash one could simply use <code>echo "$total_diff" &gt; "$TMPFILE"</code> to write out to tmpfs. However, due to timing issues, the file can be <strong>read mid-write</strong> (i.e., during echo in the shell script). On the front-end, this will often return an error such as <code>ERR_CONTENT_LENGTH_MISMATCH 200 (OK)</code>. Even if the response returns <code>200 OK</code>, the browser will throw an error because the response body didn’t match the declared length.</p>
 <p>The solution is to instead write automically with a temp file and use <code>mv</code>. This is done in Bash like so:
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nv">tmpfile</span><span class="o">=</span><span class="k">$(</span>mktemp<span class="w"> </span>/dev/shm/net_activity.XXXXXX<span class="k">)</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$total_diff</span><span class="s2">&quot;</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$tmpfile</span><span class="s2">&quot;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$tmpfile</span><span class="s2">&quot;</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>mv<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$tmpfile</span><span class="s2">&quot;</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$TMPFILE</span><span class="s2">&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">"</span><span class="nv">$total_diff</span><span class="s2">"</span><span class="w"> </span>&gt;<span class="w"> </span><span class="s2">"</span><span class="nv">$tmpfile</span><span class="s2">"</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="s2">"</span><span class="nv">$tmpfile</span><span class="s2">"</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>mv<span class="w"> </span><span class="s2">"</span><span class="nv">$tmpfile</span><span class="s2">"</span><span class="w"> </span><span class="s2">"</span><span class="nv">$TMPFILE</span><span class="s2">"</span>
 </span></code></pre></div>
 Why does this work? The <code>mv</code> operation updates directory entries (inodes) which is a single, quick operation at the filesystem level. Atomicity refers to its <strong>all-or-nothing execution</strong>; there’s no intermediate state where the operation is partially complete. This ensures that the file is never in a partially written state.</p>
 <h3 id="step-3-create-a-systemd-service">Step 3: Create a systemd service<a class="headerlink" href="#step-3-create-a-systemd-service" title="Permanent link">&para;</a></h3>
@@ -1586,21 +1618,21 @@ A potential downside here is this exposes an internal system path to the web. In
 <p>Moving to the front-end, a JavaScript handler uses <code>fetch()</code> to get the latest value from the <code>/app/net_activity</code> file created in the previous step:
 <div class="language-javascript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">updateActivityLED</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">threshold_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">300</span><span class="p">;</span>
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;/app/net_activity&#39;</span><span class="p">)</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">'/app/net_activity'</span><span class="p">)</span>
 </span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">res</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">res</span><span class="p">.</span><span class="nx">text</span><span class="p">())</span>
 </span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">activity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">trim</span><span class="p">());</span>
-</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">leds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">&#39;.hostapd-led&#39;</span><span class="p">);</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">leds</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s1">'.hostapd-led'</span><span class="p">);</span>
 </span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
 </span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nb">isNaN</span><span class="p">(</span><span class="nx">activity</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">        </span><span class="nx">leds</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">led</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">activity</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nx">threshold_bytes</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">            </span><span class="nx">led</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">&#39;led-pulse&#39;</span><span class="p">);</span>
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">            </span><span class="nx">led</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s1">'led-pulse'</span><span class="p">);</span>
 </span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">            </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">              </span><span class="nx">led</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;led-pulse&#39;</span><span class="p">);</span>
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">              </span><span class="nx">led</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'led-pulse'</span><span class="p">);</span>
 </span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">            </span><span class="p">},</span><span class="w"> </span><span class="mf">50</span><span class="p">);</span>
 </span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">          </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">            </span><span class="nx">led</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">&#39;led-pulse&#39;</span><span class="p">);</span>
+</span><span id="__span-9-17"><a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">            </span><span class="nx">led</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="s1">'led-pulse'</span><span class="p">);</span>
 </span><span id="__span-9-18"><a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">          </span><span class="p">}</span>
 </span><span id="__span-9-19"><a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">        </span><span class="p">});</span>
 </span><span id="__span-9-20"><a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">      </span><span class="p">}</span>
@@ -1628,7 +1660,7 @@ This defines a constant <code>threshold_bytes set to 300</code>. What’s specia
 This is fairly straightforward; a very short transition between the pulse and default LED state is applied. Keyframes or other CSS effects are avoided to keep things snappy.</p>
 <h3 id="step-7-enable-the-leds-in-markup">Step 7: Enable the LEDs in markup<a class="headerlink" href="#step-7-enable-the-leds-in-markup" title="Permanent link">&para;</a></h3>
 <p>The hostpad-led class is then simply added to the markup wherever a network activity LED is needed, like so:</p>
-<p><div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-circle hostapd-led service-status-&lt;?php echo $state ?&gt;&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+<p><div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">"icon"</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">"fas fa-circle hostapd-led service-status-&lt;?php echo $state ?&gt;"</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></code></pre></div>
 RaspAP has a total of three static network LEDs located in various parts of the application. These are used to indicate the status of the access point (AP), its associated interface and the operational state of the hostapd service.</p>
 <h2 id="the-results">The results<a class="headerlink" href="#the-results" title="Permanent link">&para;</a></h2>
@@ -1807,7 +1839,7 @@ RaspAP has a total of three static network LEDs located in various parts of the 
     
     
   
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../js/open_in_new_tab.js"></script>
       
