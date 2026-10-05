@@ -20,10 +20,10 @@ Insiders was a resounding success, so that private repo is being retired. This m
 A few things follow from this:
 
 1. Exclusivity ends. No new features will be tied to funding goals going forward. Sponsorship becomes what it probably always was for most sponsors anyway—a way to support ongoing maintenance and development, without a transaction attached to it.
-2. The private Insiders repo isn't going away. It's becoming an **Alumni Lounge**: a space reserved for sponsors, past and present, to talk with the team directly, see roadmap discussions and UI mockups early, and weigh in before things go public.
+2. The private Insiders repo isn't going away. It's becoming [The Lounge](https://docs.raspap.com/sponsor/#whats-in-it-for-me): a space reserved for sponsors, past and present, to talk with the team directly, see roadmap discussions and UI mockups early, and weigh in before things go public.
 3. To mark this occasion, our quarterly donation to the Raspberry Pi Foundation is _increasing_, from 15% to **20%** of sponsorship proceeds. It felt like the right way to celebrate this moment, and a better way to support educators who inspire future generations of digital makers.
 
 None of this happens without the people who sponsored RaspAP over the years. Their support, at every tier, built every one of the features shipping to everyone today. If you've been sponsoring, thank you. If you haven't, RaspAP just got a lot more capable, for free.
 
-The features above will land in the next release. Details on the Alumni Lounge and updated sponsorship tiers are up on the Sponsors page.
+The features above will land in the next release. Details on **The Lounge** and updated sponsorship tiers are up on the [Sponsors page](https://github.com/sponsors/RaspAP).
 
