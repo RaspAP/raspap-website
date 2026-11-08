@@ -60,6 +60,9 @@ Sixfab cellular HAT, built for travel
 - [Low-cost Raspberry Pi Zero endoscope camera](https://www.raspberrypi.org/blog/low-cost-raspberry-pi-zero-endoscope-camera/)
 - [Stop trusting hotel Wi-Fi: Build this Raspberry Pi travel router instead](https://www.howtogeek.com/stop-trust-hotel-wi-fi-build-raspberry-pi-travel-router/)
 - [Raspberry Pi als WLAN-Router einsetzen – so geht’s](https://www.pcwelt.de/article/1789512/raspberry-pi-als-wlan-router.html)
+- [Stop trusting hotel Wi-Fi: Build this Raspberry Pi travel router instead](https://www.howtogeek.com/stop-trusting-hotel-wi-fi-build-this-raspberry-pi-travel-router-instead/)
+- [Is Building Your Own Wi-Fi Router Legal?](https://www.slashgear.com/2303466/is-building-own-wifi-router-legal/)
+
 
 ## Other resources
 - [Raspberry Pi Wireless Access Point](https://www.youtube.com/watch?v=RvOyafQeOoY) - YouTube instructional video
